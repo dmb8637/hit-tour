@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<title>Simple slider</title>
+	<!-- подключение стилей -->
+	<link rel="stylesheet" type="text/css" href="css/sim-slider-styles.css">
+</head>
+<body>
+	<div class="sim-slider" id="first">
+		 <ul class="sim-slider-list">
+			 <li><img src="screen.gif" alt="screen"></li>    <!-- это экран -->
+			 <li class="sim-slider-element"><img src="countries/egypt/egypt1.jpg" alt="1"></li>
+			 <li class="sim-slider-element"><img src="countries/egypt/egypt2.jpg" alt="2"></li>
+			 <li class="sim-slider-element"><img src="countries/egypt/egypt3.jpg" alt="3"></li>
+			 <li class="sim-slider-element"><img src="countries/egypt/egypt4.jpg" alt="4"></li>
+			 <li class="sim-slider-element"><img src="countries/egypt/egypt5.jpg" alt="5"></li>
+			 <li class="sim-slider-element"><img src="countries/egypt/egypt6.jpg" alt="6"></li>
+			 <li class="sim-slider-element"><img src="countries/egypt/egypt7.jpg" alt="7"></li>
+			 <li class="sim-slider-element"><img src="countries/egypt/egypt8.jpg" alt="8"></li>
+			 <li class="sim-slider-element"><img src="countries/egypt/egypt9.jpg" alt="9"></li>
+			 <li class="sim-slider-element"><img src="countries/egypt/egypt10.jpg" alt="10"></li>
+		 </ul>
+		 <div class="sim-slider-arrow-left"></div>
+		 <div class="sim-slider-arrow-right"></div>
+		 <div class="sim-slider-dots"></div>
+	 </div>
+	<div class="sim-slider" id="second">
+		 <ul class="sim-slider-list">
+			 <li><img src="screen.gif" alt="screen"></li>    <!-- это экран -->
+			 <li class="sim-slider-element"><img src="countries/turkey/turk1.jpg" alt="1"></li>
+			 <li class="sim-slider-element"><img src="countries/turkey/turk2.jpg" alt="2"></li>
+			 <li class="sim-slider-element"><img src="countries/turkey/turk3.jpg" alt="3"></li>
+			 <li class="sim-slider-element"><img src="countries/turkey/turk4.jpg" alt="4"></li>
+			 <li class="sim-slider-element"><img src="countries/turkey/turk5.jpg" alt="5"></li>
+			 <li class="sim-slider-element"><img src="countries/turkey/turk6.jpg" alt="6"></li>
+			 <li class="sim-slider-element"><img src="countries/turkey/turk7.jpg" alt="7"></li>
+			 <li class="sim-slider-element"><img src="countries/turkey/turk8.jpg" alt="8"></li>
+			 <li class="sim-slider-element"><img src="countries/turkey/turk9.jpg" alt="9"></li>
+		 </ul>
+		 <div class="sim-slider-arrow-left"></div>
+		 <div class="sim-slider-arrow-right"></div>
+		 <div class="sim-slider-dots"></div>
+	 </div>	<footer>
+		…
+	</footer>
+<!-- подключение слайдера -->
+<script src="jquery/sim-slider.js"></script>
+<!-- вызов слайдера -->
+<script>new Sim("first");  new Sim("second");</script>
+</body>
+</html>
