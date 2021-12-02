@@ -24,7 +24,7 @@ img {
 }
 
 .sim-slider-element {
-  width: inherit;
+  width: 100%;
   transition: opacity 1s ease-in;
   opacity: 0;
   position: absolute;
