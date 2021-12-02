@@ -38,7 +38,7 @@ img{max-width:100%;	height: auto; width: auto\9; }
 	/* -------------------------------------------- */
 	/* ------------------Header-------------------- */
 	header {margin-top: 0px;height:150px;}
-	header #logo{top:60px;}
+/* 	header #logo{top:60px;} */
 
 	nav .wrap-nav{top: 10px; left:10px; right:auto;}
 

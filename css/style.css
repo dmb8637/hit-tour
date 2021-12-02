@@ -48,7 +48,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 .menu  ul li:hover a {color:white; background:black;}
 
 .minimenu {display:none;}
-.minimenu {position: relative;margin: 0px;background:#333333;}
+.minimenu {position: relative;margin: 0px;background:grey;}
 .minimenu div {overflow: hidden;position: relative;font: 18px/37px 'PT Sans Narrow';color: #fff;text-align:center;text-transform:uppercase;font-weight:bold;}
 .minimenu select {position: absolute;top: 0px;left: 0px;width: 100%;height: 100%; opacity: 0;filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);	cursor: pointer;}
 
@@ -62,7 +62,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 /* -------------------------------------------- */
 /* ------------------Content------------------- */
 #content {}
-#content .wrap-content{background-color:#FFF; border:1px solid #CCC; margin-top: 30px; padding:10px;}
+#content .wrap-content{background-color:#FFF; border:1px solid #CCC; margin-top: 30px; padding:10px; width: auto;}
  
 .block01 {text-align:center; padding-bottom:30px;}
 .block01 img{border:5px solid #CCCCCC;}
@@ -72,9 +72,9 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 .block02 p { padding:30px; font-size:24px; text-align:center; line-height:30px;}
 .block02 a {color:#DA251D;}
 
-.block03 {margin:30px 0;}
+.block03 {margin:0px 0;}
 .block03 h2{font-size:18px;}
-.block03 img{float:left; margin-right:10px;}
+.block03 img{float:left; margin-right:0px;}
 
 .wrap-content table{ 
     width: 800px; /* Ширина таблицы */
