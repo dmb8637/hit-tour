@@ -211,7 +211,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 }
 
  summary::-webkit-details-marker {
-    display: none
+    display: none;
 }
 
 summary::after {
