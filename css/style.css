@@ -20,7 +20,7 @@ input, textarea, select {margin:0; padding:0px;}
 /* -------------------------------------------- */
 /* ------------------Style--------------------- */
 html, body {width:100%; padding:0; margin:0;}
-body {background: #FFE4B5;color: #474747;font: 16px/25px Arial, Helvetica, sans-serif;}
+body {background: #FFE4B5;color: #474747;font: 14px/22px Arial, Helvetica, sans-serif;}
 
 a{color: #474747; text-decoration: none;}
 a:hover {color: #DA251D; text-decoration: none;}
@@ -115,6 +115,18 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 	border: 1px solid black;
    }
    
+.wrap-content .back{
+		opacity: .4;
+		position:left;
+}
+.wrap-content .back .dlpic {
+	margin-bottom: 3px;
+	vertical-align: middle;
+	width: 15px;
+	height: 15px;
+	opacity: .4;
+   }  
+  
  .wrap-content ul:not(.sim-slider-list):not(.wrap) {
     padding:0;
     list-style: none;
@@ -137,11 +149,11 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 
 /* .wrap-content .wrap li {color:white; background:black;} */
 
-.wrap-content .wrap li {display:inline; margin-right: 5px; border: 1px solid black; border-radius: 2px; padding: 3px; background:LightGrey; }
+.wrap-content .wrap li {display:inline; margin-right: 5px; border: 1px solid black; border-radius: 2px; padding: 4px; background:lightgrey; line-height: 2;}
 /* .wrap-content div .wrap:hover {background:lightgrey; width: 23%;} */
 /* .wrap-content .wrap:hover a{font-size: 120%;color:black;} */
 
-.wrap-content .download a{display:inline;width: 30%;background:#FFE4B5;text-align: center;border-radius: 5px;	vertical-align: middle;height:35px;line-height: 1.5;}
+/* .wrap-content .download a{background:#FFE4B5;text-align: center;border-radius: 2px;	vertical-align: middle;line-height: 2;} */
 /* .wrap-content .download:hover a{font-size: 110%;color:black;background:lightgrey; width: 33%;} */
 
  summary::-webkit-details-marker {
