@@ -55,18 +55,21 @@ img{max-width:100%;	height: auto; width: auto\9; }
 @media only screen and (max-width: 1000px) {
 	/* -------------------------------------------- */
 	/* ------------------Header-------------------- */
-	header{height: 130px;}
+	header{height: 140px;}
 	header #logo{top: 90px;}
 
 	nav .wrap-nav {position:relative; height: 37px; left:0px; top:25px;}
 	.menu{display:none;}
-	.wrap-content .visam {display:block;}
-	.wrap-content .visa {display:none;}
 	.minimenu{display:block;}
+
+	.wrap-header .tel {display:none;}
+	.wrap-header .telm {display:block;}
 	
 	/* -------------------------------------------- */
 	/* ------------------Content------------------- */
 	.wrap-content table{ width: inherit; }
+	.wrap-content .visam {display:block;}
+	.wrap-content .visa {display:none;}
 
 	/* -------------------------------------------- */
 	/* ------------------Footer-------------------- */
