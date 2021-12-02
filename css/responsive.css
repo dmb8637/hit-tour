@@ -60,12 +60,14 @@ img{max-width:100%;	height: auto; width: auto\9; }
 
 	nav .wrap-nav {position:relative; height: 37px; left:0px; top:25px;}
 	.menu{display:none;}
-
+	.wrap-content .visam {display:block;}
+	.wrap-content .visa {display:none;}
 	.minimenu{display:block;}
 	
 	/* -------------------------------------------- */
 	/* ------------------Content------------------- */
 	.wrap-content table{ width: inherit; }
+
 	/* -------------------------------------------- */
 	/* ------------------Footer-------------------- */
 	

@@ -49,14 +49,14 @@ div.sim-slider-arrow-left {
   left: 10px;
   top: 40%;
   display: block;
-  background: url("../sim-arrow-left.png") no-repeat;
+  background: url("../images/sim-arrow-left.png") no-repeat;
 }
 
 div.sim-slider-arrow-right {
   right: 10px;
   top: 40%;
   display: block;
-  background: url("../sim-arrow-right.png") no-repeat;
+  background: url("../images/sim-arrow-right.png") no-repeat;
 }
 
 div.sim-slider-arrow-left:hover {
