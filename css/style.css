@@ -19,8 +19,8 @@ input, textarea, select {margin:0; padding:0px;}
 
 /* -------------------------------------------- */
 /* ------------------Style--------------------- */
-html, body {width:100%; padding:0; margin:0;}
-body {background: #FFE4B5;color: #474747;font: 14px/22px Arial, Helvetica, sans-serif;}
+html, body {width:100%; padding:0; margin:0 auto;max-width:1100px;}
+body {background: #FFE4B5;color: #474747;font: 14px/22px Arial, Helvetica, sans-serif;  }
 
 a{color: #474747; text-decoration: none;}
 a:hover {color: #DA251D; text-decoration: none;}
@@ -129,29 +129,29 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 	opacity: .4;
    }  
   
- .wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa):not(.visam) {
+ .wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa) {
     padding:0;
     list-style: none;
 }
-.wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa):not(.visam) li{
+.wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa) li{
     padding:4px;
 	line-height: 1.4;
 }
-.wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa):not(.visam) li:before {
+.wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa) li:before {
     padding-right:10px;
     font-weight: bold;
     color: #C0C0C0;
     content: "\2714";
     transition-duration: 0.5s;
 }
-.wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa):not(.visam) li:hover:before {
+.wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa) li:hover:before {
     color: #337AB7;
     content: "\2714";
 }
 
 /* .wrap-content .wrap li {color:white; background:black;} */
-.wrap-content .wrap button{width:auto; height: 120%; text-align:center;border: 0;border-radius: 15px;padding:5px;}
-.wrap-content .wrap button:hover {background:  #FFF;}
+.wrap-content .wrap button{width:auto; height: 120%; text-align:center;border: 0;border-radius: 25px;padding:10px;background:lightgrey;}
+.wrap-content .wrap button:hover {font-weight: bold;}
 .wrap-content .wrap li {padding:4px;	line-height: 1.8;}
 /* .wrap-content div .wrap:hover {background:lightgrey; width: 23%;} */
 /* .wrap-content .wrap:hover a{font-size: 120%;color:black;} */
@@ -159,64 +159,11 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 /* .wrap-content .download a{background:#FFE4B5;text-align: center;border-radius: 2px;	vertical-align: middle;line-height: 2;} */
 /* .wrap-content .download:hover a{font-size: 110%;color:black;background:lightgrey; width: 33%;} */
 
-.wrap-content .visam {display: none;}
-.wrap-content .visam button{width:90px; height: 120%;text-align:center;}
-.wrap-content .visam button:hover {background:  #FFF;}
-.wrap-content .visam li {  padding:4px;	line-height: 1.8;}
+.wrap-content .visa button{width:190px; height: 120%;text-align:center;border: 0;border-radius: 25px;padding:10px;background:lightgrey;}
+.wrap-content .visa button:hover {font-weight: bold;}
+.wrap-content .visa li {  padding:4px;	line-height: 1.8;}
 
 .wrap-content h3{font-size:22px;}
-.wrap-content .visa {
-    margin-bottom: 8px;
-    padding:0;
-    list-style: none;
-    counter-reset: li;
-}    
-.wrap-content .visa li {
-    position: relative;
-    border: 2px solid black;
-    background: lightgrey;
-    padding:8px 20px 6px 28px;
-    margin:12px 0 12px 40px;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-}
-.wrap-content .visa li:hover {
-    background: #FFF;
-}
-.wrap-content .visa li:before {
-    line-height: 32px;
-    position: absolute;
-    top: 4px;
-    left:-40px;
-    width:40px;
-    text-align:center;
-    font-size: 16px;
-    font-weight: bold;
-    color: #FFF;
-    background: grey;
-    counter-increment: li;
-    content: counter(li);
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s;
-}
-.wrap-content .visa li:hover:before {
-    width:46px;
-}
-.wrap-content .visa li:after {
-    position: absolute;
-    left: 0;
-    top: 4px;
-    content: "";
-    height: 0;
-    width: 0;
-    border: 16px solid transparent;
-    border-left-color: grey;
-    -webkit-transition-duration: 0.2s;
-    transition-duration: 0.2s
-}
-.wrap-content .visa li:hover:after {
-    margin-left: 6px;
-}
 
 .wrap-content .contact img{width:55px; height:55px;}
 

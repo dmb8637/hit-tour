@@ -62,14 +62,14 @@ img{max-width:100%;	height: auto; width: auto\9; }
 	.menu{display:none;}
 	.minimenu{display:block;}
 
+	.wrap-content .visa button{width:auto; min-width: 90px;}
+
 	.wrap-header .tel {display:none;}
 	.wrap-header .telm {display:block;}
 	
 	/* -------------------------------------------- */
 	/* ------------------Content------------------- */
 	.wrap-content table{ width: inherit; }
-	.wrap-content .visam {display:block;}
-	.wrap-content .visa {display:none;}
 
 	/* -------------------------------------------- */
 	/* ------------------Footer-------------------- */
