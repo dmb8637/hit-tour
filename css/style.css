@@ -78,8 +78,8 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 .block03 h2{font-size:18px;}
 .block03 img{float:left; margin-right:0px;}
 
- .wrap-content p {
-	align: justify; padding:5px;
+ .wrap-content .p {
+	 padding:5px;
  }
 
 .wrap-content table{ 
@@ -129,29 +129,30 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 	opacity: .4;
    }  
   
- .wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa) {
+ .wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa):not(.visam) {
     padding:0;
     list-style: none;
 }
-.wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa) li{
+.wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa):not(.visam) li{
     padding:4px;
 	line-height: 1.4;
 }
-.wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa) li:before {
+.wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa):not(.visam) li:before {
     padding-right:10px;
     font-weight: bold;
     color: #C0C0C0;
     content: "\2714";
     transition-duration: 0.5s;
 }
-.wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa) li:hover:before {
+.wrap-content ul:not(.sim-slider-list):not(.wrap):not(.visa):not(.visam) li:hover:before {
     color: #337AB7;
     content: "\2714";
 }
 
 /* .wrap-content .wrap li {color:white; background:black;} */
-
-.wrap-content .wrap li {display:inline; margin-right: 5px; border: 1px solid black; border-radius: 2px; padding: 4px; background:lightgrey; line-height: 2;}
+.wrap-content .wrap button{width:auto; height: 100%; text-align:center;}
+.wrap-content .wrap button:hover {background:  #FFF;}
+.wrap-content .wrap li {padding:4px;	line-height: 1.4;}
 /* .wrap-content div .wrap:hover {background:lightgrey; width: 23%;} */
 /* .wrap-content .wrap:hover a{font-size: 120%;color:black;} */
 
@@ -159,6 +160,11 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 /* .wrap-content .download:hover a{font-size: 110%;color:black;background:lightgrey; width: 33%;} */
 
 .wrap-content .visam {display: none;}
+.wrap-content .visam button{width:90px; height: 100%;text-align:center;}
+.wrap-content .visam button:hover {background:  #FFF;}
+.wrap-content .visam li {  padding:4px;	line-height: 1.4;}
+
+
 .wrap-content .visa {
     margin-bottom: 8px;
     padding:0;
