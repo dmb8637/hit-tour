@@ -71,7 +71,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 .block01 h2{font-size:20px; line-height:30px;}
 
 .block02 {margin:10px; border-bottom:1px dashed #cccccc; border-top:1px dashed #cccccc;}
-.block02 p { padding:30px; font-size:24px; text-align:center; line-height:30px;}
+.block02 p { padding:10px; font-size:14px; text-align:justify; line-height:20px;}
 .block02 a {color:#DA251D;}
 
 .block03 {margin:0px 0;}
