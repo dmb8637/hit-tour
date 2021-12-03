@@ -36,7 +36,7 @@ a.button:hover{}
 header {}
 header .wrap-header{height: 110px;}
 
-header #logo {position:absolute; top:30px; padding:5px; width: 100%;}
+	header #logo {position:absolute; top:30px; padding:5px; width: 100%;}
 
 nav {}
 nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:#333;}
@@ -79,9 +79,14 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 .block03 img{float:left; margin-right:0px;}
 
  .wrap-content .p {
-	 padding:5px; text-align:justify;text-indent: 25px;
+	padding:5px; text-align:justify;text-indent: 25px;
  }
-
+ 
+.wrap-content .leftimg {
+    float:left; /* Выравнивание по левому краю */
+    margin: 7px 7px 0 0; /* Отступы вокруг картинки */
+   }
+   
 .wrap-content table{ 
     width: 800px; /* Ширина таблицы */
     border: 2px solid black; /* Рамка вокруг таблицы */
