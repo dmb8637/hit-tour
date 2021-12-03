@@ -79,7 +79,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 .block03 img{float:left; margin-right:0px;}
 
  .wrap-content .p {
-	 padding:5px;
+	 padding:5px; text-align:justify;text-indent: 25px;
  }
 
 .wrap-content table{ 
@@ -150,9 +150,9 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 }
 
 /* .wrap-content .wrap li {color:white; background:black;} */
-.wrap-content .wrap button{width:auto; height: 100%; text-align:center;}
+.wrap-content .wrap button{width:auto; height: 120%; text-align:center;}
 .wrap-content .wrap button:hover {background:  #FFF;}
-.wrap-content .wrap li {padding:4px;	line-height: 1.4;}
+.wrap-content .wrap li {padding:4px;	line-height: 1.8;}
 /* .wrap-content div .wrap:hover {background:lightgrey; width: 23%;} */
 /* .wrap-content .wrap:hover a{font-size: 120%;color:black;} */
 
@@ -160,11 +160,11 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 /* .wrap-content .download:hover a{font-size: 110%;color:black;background:lightgrey; width: 33%;} */
 
 .wrap-content .visam {display: none;}
-.wrap-content .visam button{width:90px; height: 100%;text-align:center;}
+.wrap-content .visam button{width:90px; height: 120%;text-align:center;}
 .wrap-content .visam button:hover {background:  #FFF;}
-.wrap-content .visam li {  padding:4px;	line-height: 1.4;}
+.wrap-content .visam li {  padding:4px;	line-height: 1.8;}
 
-
+.wrap-content h3{font-size:22px;}
 .wrap-content .visa {
     margin-bottom: 8px;
     padding:0;
@@ -217,6 +217,8 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 .wrap-content .visa li:hover:after {
     margin-left: 6px;
 }
+
+.wrap-content .contact img{width:55px; height:55px;}
 
  summary::-webkit-details-marker {
     display: none;
