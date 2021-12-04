@@ -7,7 +7,7 @@ img {
   min-width: 180px;
   margin: 20px auto;
   padding: 30px 50px;
-  border: 1px solid #ccd;
+  /* border: 1px solid #ccd; */
   background-color: white;
 }
 
@@ -68,6 +68,7 @@ div.sim-slider-arrow-right:hover {
 }
 
 div.sim-slider-dots {
+  display: none; 		
   width: 100%;
   height: auto;
   position: absolute;
