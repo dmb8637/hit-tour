@@ -26,6 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="css/sim-slider-styles.css">
 	<link rel="stylesheet" href="css/modal.css">
 	
+	
 	<!--[if lt IE 8]>
        <div style=' clear: both; text-align:center; position: relative;'>
          <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
@@ -42,15 +43,18 @@
 	<link href='images/favicon.png' rel='icon' type='image/x-icon'/>
 	<script src="js/jquery.js"></script> 
     <script>
+		
 		$(function(){
 			var str = location.search;
 			str = str.substr(1);
+			$(".wrap-content").remove();
 			if (str){
-				$(".wrap-content").remove();
 				$("#content").load(str + ".html"); 
-			}
+			} else {$("#content").load("countries.html"); }
 		});	
+		
 	</script>
+
 </head>
 <body>
 <!--------------Header--------------->
@@ -128,81 +132,7 @@
 
 <!--------------Content--------------->
 <section id="content">
-	<div class="wrap-content zerogrid">
-		<div class="row block02">
-<!-- 		<p>Created by <a href="http://www.hit-tour.ru" target="_blank">Hit-tour</a>. You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files.
-		</p> -->
-			<p>
-			<img src="images/leto4.jpg" class="leftimg" style="width:125px; height:100px;">
-				<strong>Лето</strong> – прекрасная пора. Для многих из нас это сезон отпусков, когда можно как следует отдохнуть и восстановить силы после года трудовых будней. Конечно, очень хочется, чтобы эти дни стали запоминающимися. Идеальный вариант для этого – организовать поездку на курорт с семьей или друзьями.
-					<br>   
-				<strong>Выезд за границу</strong> подходит не каждому. Для кого-то проблема получить загранпаспорт, кто-то не может летать на самолетах, кого-то пугает порядок получения медицинской помощи по страховке, а кто-то просто патриот и предпочитает отдыхать на отечественных курортах. Причины могут быть разные, но это не значит, что надо лишать себя отпуска.
-						<br>  
-				<strong>Мы живем</strong> в огромной стране богатой на замечательные места для отдыха. По России можно путешествовать всю жизнь и при этом не страдать от однообразия.        
-			</p>
-		</div>	
-	
-		<div class="row block01">
-			<div class="col-1-4">
-				<div class="wrap-col">
-					<a href="index.html?countries/russia/russia"><img src="countries/russia/rusScreen.jpg"></a>
-					<h2>РОССИЯ</h2>
-<!-- 					<p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. </p> -->
-					<a class="button" href="index.html?countries/russia/russia">Подробнее..</a>
-				</div>
-			</div>		
-			<div class="col-1-4">
-				<div class="wrap-col">
-					<a href="index.html?countries/egypt/egypt"><img src="countries/egypt/egyptScreen.jpg"></a>
-					<h2>ЕГИПЕТ</h2>
-<!-- 					<p><strong>В Египте</strong> тропический климат чрезвычайно сухой. Есть два отличных сезона - мягкая зима и жаркое лето... </p> -->
-					<a class="button" href="index.html?countries/egypt/egypt">Подробнее..</a>
-				</div>
-			</div>
-			<div class="col-1-4">
-				<div class="wrap-col">
-					<a href="index.html?countries/thailand/thailand"><img src="countries/thailand/thailandScreen.jpg"></a>
-					<h2>ТАЙЛАНД</h2>
-<!-- 					<p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. </p> -->
-					<a class="button" href="index.html?countries/thailand/thailand">Подробнее..</a>
-				</div>
-			</div>
-			<div class="col-1-4">
-				<div class="wrap-col">
-					<a href="index.html?countries/greece/greece"><img src="countries/greece/greeceScreen.jpg"></a>
-					<h2>ГРЕЦИЯ</h2>
-<!-- 					<p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim lacinia. </p> -->
-					<a class="button" href="index.html?countries/greece/greece">Подробнее..</a>
-				</div>
-			</div>
-		</div>
-		
-		
-		<div class="row block03">
-			<div class="col-1-3">
-				<div class="wrap-col">
-					<img src="images/100x100.jpg"/>
-					<a href="#"><h2>Горячее предложение 1</h2></a>
-					<p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim.</p>
-				</div>
-			</div>
-			<div class="col-1-3">
-				<div class="wrap-col">
-					<img src="images/100x100.jpg"/>
-					<a href="#"><h2>Горячее предложение 2</h2></a>
-					<p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim.</p>
-				</div>
-			</div>
-			<div class="col-1-3">
-				<div class="wrap-col">
-					<img src="images/100x100.jpg"/>
-					<a href="#"><h2>Горячее предложение 3</h2></a>
-					<p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim.</p>
-				</div>
-			</div>
-		</div>
-		
-	</div>
+
 </section>
 <!--------------Footer--------------->
 <footer>

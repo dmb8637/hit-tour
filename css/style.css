@@ -69,7 +69,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 #content {}
 #content .wrap-content{background-color:#FFE4B5; border:1px solid #CCC; margin-top: 30px; padding:10px; width: auto;}
  
-.block01 {text-align:center; padding-bottom:30px;}
+.block01 {display:none;text-align:center; padding-bottom:30px;}
 .block01 img{border:5px solid #CCCCCC;}
 .block01 h2{font-size:20px; line-height:30px;}
 
@@ -78,8 +78,11 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 .block02 a {color:#DA251D;}
 
 .block03 {margin:0px 0;}
+.block03 div[class*="col-"]  {display:none;}
 .block03 h2{font-size:18px;}
-.block03 img{float:left; margin-right:0px;margin: 7px 7px 0 0;}
+.block03 img{float:left; margin-right:0px;margin: 7px 7px 0 0; width:100px; height:100px;}
+.block03 img:hover {transform: scale(1.3);}
+.block03 span {color:grey; font-size: small;}
 
  .wrap-content .p {
 	padding:5px; text-align:justify;text-indent: 25px;

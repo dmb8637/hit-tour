@@ -1,4 +1,40 @@
+	<script>
+		function getRandomInt(min, max) {
+		  min = Math.ceil(min);
+		  max = Math.floor(max);
+		  return Math.floor(Math.random() * (max - min)) + min;
+		};
+		
+		$(function getrnd(){
+			var colNum = 7;
+			do {
+				var f1 = getRandomInt(1, colNum);
+				var f2 = getRandomInt(1, colNum);
+				var f3 = getRandomInt(1, colNum);			
+			} while (f1==f2||f1==f3||f2==f3);
+
+<!-- 			alert(".block03 .col-" + f1.toString() + "-3" + "\n" + ".block03 .col-" + f2.toString() + "-3"+ "\n" + ".block03 .col-" + f3.toString() + "-3"); -->
+
+			$(".block03 div[class='col-" + f1.toString() + "-3']")[0].style.display = "inline-block";
+			$(".block03 div[class='col-" + f2.toString() + "-3']")[0].style.display = "inline-block";
+			$(".block03 div[class='col-" + f3.toString() + "-3']")[0].style.display = "inline-block";
+		});
+		
+	</script> 
 	<div class="wrap-content zerogrid">
+		<div class="row block02">
+<!-- 		<p>Created by <a href="http://www.hit-tour.ru" target="_blank">Hit-tour</a>. You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files.
+		</p> -->
+			<p>
+			<img src="images/leto4.jpg" class="leftimg" style="width:125px; height:100px;">
+				<strong>Лето</strong> – прекрасная пора. Для многих из нас это сезон отпусков, когда можно как следует отдохнуть и восстановить силы после года трудовых будней. Конечно, очень хочется, чтобы эти дни стали запоминающимися. Идеальный вариант для этого – организовать поездку на курорт с семьей или друзьями.
+					<br>   
+				<strong>Выезд за границу</strong> подходит не каждому. Для кого-то проблема получить загранпаспорт, кто-то не может летать на самолетах, кого-то пугает порядок получения медицинской помощи по страховке, а кто-то просто патриот и предпочитает отдыхать на отечественных курортах. Причины могут быть разные, но это не значит, что надо лишать себя отпуска.
+						<br>  
+				<strong>Мы живем</strong> в огромной стране богатой на замечательные места для отдыха. По России можно путешествовать всю жизнь и при этом не страдать от однообразия.        
+			</p>
+		</div>	
+		
 		<div class="row block01">
 			<div class="col-1-4">
 				<div class="wrap-col">
@@ -48,32 +84,55 @@
 					<a class="button" href="index.html?countries/greece/greece">Подробнее..</a>
 				</div>
 			</div>
-			
+		
 		</div>
 		
-		<div class="row block02"><p>Created by <a href="http://www.hit-tour.ru" target="_blank">Hit-tour</a>. You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files.</p></div>
-		
+<!-- 		<div class="row block02"><p>Created by <a href="http://www.hit-tour.ru" target="_blank">Hit-tour</a>. You can use and modify the template for both personal and commercial use. You must keep all copyright information and credit links in the template and associated files.</p></div>
+ -->		
 		<div class="row block03">
 			<div class="col-1-3">
 				<div class="wrap-col">
-					<img src="images/100x100.jpg"/>
-					<a href="#"><h2>Text Heading</h2></a>
-					<p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim.</p>
+					<a href="index.html?countries/russia/russia"><h2>РОССИЯ</h2><img src="countries/russia/rusScreen.jpg"/>
+					<p><strong>По России</strong> можно путешествовать всю жизнь и при этом.. <span>читать далее</span></p></a>
 				</div>
 			</div>
-			<div class="col-1-3">
+			<div class="col-2-3">
 				<div class="wrap-col">
-					<img src="images/100x100.jpg"/>
-					<a href="#"><h2>Text Heading</h2></a>
-					<p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim.</p>
+					<a href="index.html?countries/egypt/egypt"><h2>ЕГИПЕТ</h2><img src="countries/egypt/egyptScreen.jpg"/>
+					<p><strong>В Египте</strong> тропический климат чрезвычайно сухой. Есть два отличных сезона.. <span>читать далее</span></p></a>
 				</div>
 			</div>
-			<div class="col-1-3">
+			<div class="col-3-3">
 				<div class="wrap-col">
-					<img src="images/100x100.jpg"/>
-					<a href="#"><h2>Text Heading</h2></a>
-					<p>Aliquam viverra convallis auctor. Sed accumsan libero quis mi commodo et suscipit enim.</p>
+					<a href="index.html?countries/thailand/thailand"><h2>ТАЙЛАНД</h2><img src="countries/thailand/thailandScreen.jpg"/>
+					<p><strong>Страна</strong> вытянута с севера на юг, поэтому климат в разных ее частях отличается.. <span>читать далее</span></p></a>
 				</div>
 			</div>
+			<div class="col-4-3">
+				<div class="wrap-col">
+					<a href="index.html?countries/czech/czech"><h2>ЧЕХИЯ</h2><img src="countries/czech/czechScreen.jpg"/>
+					<p><strong>Климат Чехии</strong> умеренный, континентально-океанический, это значит, что.. <span>читать далее</span></p></a>
+				</div>
+			</div>
+			<div class="col-5-3">
+				<div class="wrap-col">
+					<a href="index.html?countries/cyprus/cyprus"><h2>КИПР</h2><img src="countries/cyprus/cyprusScreen.jpg"/>
+					<p>Климат на острове — субтропический средиземноморский с жарким летом и мягкой.. <span>читать далее</span></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-6-3">
+				<div class="wrap-col">
+					<a href="index.html?countries/greece/greece"><h2>ГРЕЦИЯ</h2><img src="countries/greece/greeceScreen.jpg"/>
+					<p>По большей части на территории <strong>Греции</strong> царит средиземноморский климат с жарким..<span>читать далее</span></p></a>
+				</div>
+			</div>			
+			<div class="col-7-3">
+				<div class="wrap-col">
+					<a href="index.html?countries/montenegro/montenegro"><h2>ЧЕРНОГОРИЯ</h2><img src="countries/montenegro/montenegroScreen.jpg"/>
+					<p>В северной <strong>Черногории</strong> климат умеренно континентальный, на Адриатическом побережье..<span>читать далее</span></p></a>
+				</div>
+			</div>	
 		</div>
+		
 	</div>
