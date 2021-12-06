@@ -34,7 +34,7 @@ a.button:hover{}
 /* -------------------------------------------- */
 /* ------------------Header-------------------- */
 header {}
-header .wrap-header{height: 110px;}
+header .wrap-header{height: 100px;}
 
 /* header #logo {position:absolute; top:30px; padding:5px; width: 100%;}*/
 
@@ -79,7 +79,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 
 .block03 {margin:0px 0;}
 .block03 h2{font-size:18px;}
-.block03 img{float:left; margin-right:0px;}
+.block03 img{float:left; margin-right:0px;margin: 7px 7px 0 0;}
 
  .wrap-content .p {
 	padding:5px; text-align:justify;text-indent: 25px;
