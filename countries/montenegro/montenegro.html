@@ -1,18 +1,58 @@
 <script src="../jquery/jquery.js"></script> 
 <script async src="../jquery/table.js"></script> 
-<div class="aboutrus">
+<div class="wrap-content zerogrid">
+	<p class="back"><a href="javascript:void(0);" onclick="history.back(); return false;"><img src="images/sim-arrow-left.png" class="dlpic">  Назад</a></p>
+	<br>
     <h3 style="text-align: center;">Отдых в Черногории, климат, достопримечательности, развлечения</h3>
 
-	<div style="text-align: center;">
-			<a href="javascript:void(0);" onclick="history.back(); return false;" title="Назад">Назад</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../index.html" title="На главную">На главную</a>
-	</div>
-		<p>
-			&nbsp;&nbsp;&nbsp;В северной Черногории климат умеренно континентальный, на Адриатическом побережье — средиземноморский. 
+	<br>
+	
+	<div class="p">
+			В северной Черногории климат умеренно континентальный, на Адриатическом побережье — средиземноморский. 
 			В приморской области лето обычно продолжительное, жаркое (+23 — +25 °C) и достаточно сухое, зима короткая и прохладная (+3 — +7 °C). 
 			В горных районах умеренно тёплое лето (+19 — +25 °C) и относительно холодная зима (от +5 до −10 °C), осадки выпадают в основном в виде снега; 
 			снежный покров удерживается до пяти месяцев в году.
-		</p>
+	</div>
+		<br>
+
+	<div class="sim-slider" id="first">
+		 <ul class="sim-slider-list">
+			 <li><img src="images/screen.gif" alt="screen"></li>    <!-- это экран -->
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro1.jpg" alt="1"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro2.jpg" alt="2"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro3.jpg" alt="3"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro4.jpg" alt="4"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro5.jpg" alt="5"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro6.jpg" alt="6"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro7.jpg" alt="7"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro8.jpg" alt="8"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro9.jpg" alt="9"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro10.jpg" alt="10"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro11.jpg" alt="11"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro12.jpg" alt="12"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro13.jpg" alt="13"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro14.jpg" alt="14"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro15.jpg" alt="15"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro16.jpg" alt="16"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro17.jpg" alt="17"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro18.jpg" alt="18"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro19.jpg" alt="19"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro20.jpg" alt="20"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro21.jpg" alt="21"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro22.jpg" alt="22"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro23.jpg" alt="23"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro24.jpg" alt="24"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro25.jpg" alt="25"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro26.jpg" alt="26"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro27.jpg" alt="27"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro28.jpg" alt="28"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro29.jpg" alt="29"></li>
+			 <li class="sim-slider-element"><img src="countries/montenegro/montenegro30.jpg" alt="30"></li>
+		 </ul>
+		 <div class="sim-slider-arrow-left"></div>
+		 <div class="sim-slider-arrow-right"></div>
+		 <div class="sim-slider-dots"></div>
+	 </div>
 		<br>
 		<strong>Достопримечательности Черногории:</strong>
 		<ul>
@@ -36,10 +76,10 @@
 			<li>Липская пещера (5 км от г. Цетинье)</li>
 		</ul>
 
-	<div style="text-align: center;">
-			<a href="javascript:void(0);" onclick="history.back(); return false;" title="Назад">Назад</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../index.html" title="На главную">На главную</a>
-	</div>
-	<br>
-
+		<br>
+	<p class="back"><a href="javascript:void(0);" onclick="history.back(); return false;"><img src="images/sim-arrow-left.png" class="dlpic">  Назад</a></p>
+	
 </div>
+<script src="js/sim-slider.js"></script>
+<!-- вызов слайдера -->
+<script>new Sim("first");</script>
