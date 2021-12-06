@@ -58,9 +58,10 @@
 			   <div id="blok_tel">
 					  <form action="" method="post" class="form1">
 						ЗАКАЗ ОБРАТНОГО ЗВОНКА
-						<input type="text" name="tel" class="inputbox" value="" id="tel"
+						<input style="font-size:22px;" type="text" name="tel" class="inputbox" value="" id="tel"
 							   onfocus="(this.value == '0123456789') && (this.value = '')"
 							   onblur="(this.value == '') && (this.value = '0123456789')">
+						<br><br>	   
 						<input type="submit" class="button" name="submit_tel" value="Заказать звонок">
 					  </form>
 					<?if(isset($_POST["submit_tel"])) 
