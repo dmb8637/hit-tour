@@ -6,18 +6,26 @@
 		};
 		
 		$(function getrnd(){
-			var colNum = 7;
-			do {
-				var f1 = getRandomInt(1, colNum+1);
-				var f2 = getRandomInt(1, colNum+1);
-				var f3 = getRandomInt(1, colNum+1);			
-			} while (f1==f2||f1==f3||f2==f3);
 
-<!-- 			alert(".block03 .col-" + f1.toString() + "-3" + "\n" + ".block03 .col-" + f2.toString() + "-3"+ "\n" + ".block03 .col-" + f3.toString() + "-3"); -->
+			var loc = location.search;
+			if(loc.includes('countries')){
+				$(".block02")[0].style.display = "none";
+				$(".block03 div[class*='col-']").each(function(){
+						$(this).css('display', 'inline-block');
+					});  
+			} else {
+				var colNum = 7;
+				do {
+					var f1 = getRandomInt(1, colNum+1);
+					var f2 = getRandomInt(1, colNum+1);
+					var f3 = getRandomInt(1, colNum+1);			
+				} while (f1==f2||f1==f3||f2==f3);
 
-			$(".block03 div[class='col-" + f1.toString() + "-3']")[0].style.display = "inline-block";
-			$(".block03 div[class='col-" + f2.toString() + "-3']")[0].style.display = "inline-block";
-			$(".block03 div[class='col-" + f3.toString() + "-3']")[0].style.display = "inline-block";
+<!-- 			alert(".block03 .col-" + f1.toString() + "-3" + "\n" + ".block03 .col-" + f2.toString() + "-3"+ "\n" + ".block03 .col-" + f3.toString() + "-3"); -->			
+				$(".block03 div[class='col-" + f1.toString() + "-3']")[0].style.display = "inline-block";
+				$(".block03 div[class='col-" + f2.toString() + "-3']")[0].style.display = "inline-block";
+				$(".block03 div[class='col-" + f3.toString() + "-3']")[0].style.display = "inline-block";			
+			}
 		});
 		
 	</script> 

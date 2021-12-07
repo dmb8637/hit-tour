@@ -67,7 +67,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 /* -------------------------------------------- */
 /* ------------------Content------------------- */
 #content {}
-#content .wrap-content{background-color:#FFE4B5; border:1px solid #CCC; margin-top: 30px; padding:10px; width: auto;}
+#content .wrap-content{background-color:#FFE4B5; border:0px solid #CCC; margin-top: 30px; padding:10px; width: auto;}
  
 .block01 {display:none;text-align:center; padding-bottom:30px;}
 .block01 img{border:5px solid #CCCCCC;}

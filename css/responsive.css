@@ -65,7 +65,7 @@ img{max-width:100%;	height: auto; width: auto\9; }
 
 	.wrap-header .tel {display:none;}
 	.wrap-header .telm {display:block;}
-		.block03 div[class*='col-'] {width:100%;}
+	.block03 div[class*='col-'] {width:100%;}
 	/* -------------------------------------------- */
 	/* ------------------Content------------------- */
 	.wrap-content table{ width: inherit; }

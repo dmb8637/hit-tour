@@ -10,9 +10,9 @@
 	<meta charset="utf-8">
 	<title>Турпутевки, направления, визы, отдых, путешествия. Турагенство "Hit-Tour". Тел.+7(952)961-68-43</title>
 	<meta name="description" content="Турагенство Hit-Tour предлагает услуги по оформлению туристических путевок, маршрутов, виз. Мы Вам очень рады!">
-	<link rel="manifest" href="site.webmanifest">
+<!-- 	<link rel="manifest" href="site.webmanifest"> -->
 <!-- 	<meta name="author" content="www.hit-tour.ru"> -->
-	<meta name="yandex-verification" content="d2b09bf6875ba184" />
+<!-- 	<meta name="yandex-verification" content="d2b09bf6875ba184" /> -->
 	
     <!-- Mobile Specific Metas
   ================================================== -->
@@ -50,7 +50,10 @@
 			$(".wrap-content").remove();
 			if (str){
 				$("#content").load(str + ".html"); 
-			} else {$("#content").load("countries.html"); }
+			} else {
+				$("#content").load("countries.html"); 
+
+				}
 		});	
 		
 	</script>
