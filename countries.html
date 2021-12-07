@@ -6,10 +6,10 @@
 		};
 		
 		$(function getrnd(){
-
 			var loc = location.search;
-			if(loc.includes('countries')){
+			if(loc=='?countries'){
 				$(".block02")[0].style.display = "none";
+				$(".wrap-content .scrolling-wrapper")[0].style.display = "flex";
 				$(".block03 div[class*='col-']").each(function(){
 						$(this).css('display', 'inline-block');
 					});  
@@ -41,7 +41,19 @@
 						<br>  
 				<strong>Мы живем</strong> в огромной стране богатой на замечательные места для отдыха. По России можно путешествовать всю жизнь и при этом не страдать от однообразия.        
 			</p>
-		</div>	
+		</div>
+		
+		<div class="scrolling-wrapper">
+			<div class="card"><button onclick="window.location.href='index.html?countries/egypt/egypt';">Египет</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/cyprus/cyprus';">Кипр</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/czech/czech';">Чехия</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/thailand/thailand';">Тайланд</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/greece/greece';">Греция</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/montenegro/montenegro';">Черногория</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/russia/russia';">Россия</button></div>
+			<div class="card"><button onclick="window.location.href='';">Button</button></div>
+			<div class="card"><button onclick="window.location.href='';">Button</button></div>
+		</div>
 		
 		<div class="row block01">
 			<div class="col-1-4">
