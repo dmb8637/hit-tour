@@ -173,6 +173,8 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
     color: #337AB7;
     content: "\2714";
 }
+.wrap-content .wrap input{width:auto; height: 120%; text-align:center;border: 1px solid black;border-radius: 20px;padding:3px 10px 3px 10px;background:lightgrey;}
+.wrap-content .wrap input:hover {font-weight: bold;}
 
 /* .wrap-content .wrap li {color:white; background:black;} */
 .wrap-content .wrap button{width:auto; height: 120%; text-align:center;border: 1px solid black;border-radius: 20px;padding:3px 10px 3px 10px;background:lightgrey;}
