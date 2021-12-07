@@ -1,0 +1,76 @@
+<div class="wrap-content zerogrid">
+	<p class="back"><a href="javascript:void(0);" onclick="history.back(); return false;"><img src="images/sim-arrow-left.png" class="dlpic">  Назад</a></p>
+	<br>
+	<h3 style="text-align:center;">Курсы валют</h3>
+	<br>
+	
+			<b>Дата:</b> <span id="d"></span><br />
+			<b>Кол-во записей:</b> <span id="n"></span><br />
+			
+	
+	
+	<br>
+	
+	<div style="text-align: center;">
+<!-- 		<ul class="wrap">
+			<li><button onclick="window.location.href = '';"></button></li>
+			<li><button onclick="window.location.href = 'visa/visa-faq.htm#modal';">Частые вопросы</button></li>
+		</ul> -->
+	</div>
+	
+</div>
+
+
+   <script>
+		
+		var today = new Date();
+		var dd = String(today.getDate()).padStart(2, '0');
+		var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+		var yyyy = today.getFullYear();
+		today = dd + '/' + mm + '/' + yyyy;
+		document.getElementById("d").innerHTML = today;
+		
+		var uri = "http://www.cbr.ru/scripts/XML_daily.asp?date_req=" + today;
+<!-- 		var uri = "curs.xml"; -->
+		/*var name = "curs.xml";
+		window.onload = function downloadURI(uri, name) 
+		{
+			var link = document.createElement("a");
+			// If you don't know the name or want to use
+			// the webserver default set name = ''
+			link.setAttribute('download', name);
+			link.href = uri;
+			document.body.appendChild(link);
+			link.click();
+			link.remove();
+		}*/
+   
+      if (window.XMLHttpRequest)
+      { // для IE7+, Firefox, Chrome, Opera, Safari
+         xmlhttp = new XMLHttpRequest();
+      }
+      else
+      { // для IE6, IE5
+         xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+      }
+
+      xmlhttp.open("GET", uri, false);
+      xmlhttp.send();
+      xmlDoc = xmlhttp.responseXML;
+
+      document.write("<table border='1'>");
+      var x = xmlDoc.getElementsByTagName("Valute");
+	  
+      for (i = 0; i < x.length; i++)
+      {
+         document.write("<tr><td>");
+         document.write(x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
+         document.write("</td><td>");
+         document.write(x[i].getElementsByTagName("CharCode")[0].childNodes[0].nodeValue);
+         document.write("</td><td>");
+         document.write(x[i].getElementsByTagName("Value")[0].childNodes[0].nodeValue);     
+		 document.write("</td></tr>");
+      }
+      document.write("</table>");
+
+   </script>
