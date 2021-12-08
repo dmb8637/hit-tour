@@ -1,24 +1,17 @@
-<script src="../jquery/jquery.js"></script> 
-<script async src="../jquery/table.js"></script> 
-<div class="aboutrus">
-	<h3 style="text-align: center;">Оформление шенгенских виз в Германию&nbsp;<img src="euro-flag.jpg" class="rpic" width="50" height="29">&nbsp;<img src="germany/germany-flag.jpg" class="rpic" width="50" height="29"></h3>
+<script src="js/calcsum.js"></script>
+<div class="wrap-content zerogrid">
+	<p class="back"><a href="javascript:void(0);" onclick="history.back(); return false;"><img src="images/sim-arrow-left.png" class="dlpic">  Назад</a></p>
+	<br>
+	<h3 style="text-align: center;">Оформление шенгенских виз в Германию&nbsp;&nbsp;<img src="visa/germany/germany-flag.jpg" class="rpic"></h3>
+	<br>
 
+<!-- 			<li><a href="index.html" title="На главную">На главную</a></li>	 -->
 	<div style="text-align: center;">
-		<div style="display:inline-block;">
-			<form action="germany/germany-faq.htm#modal">
-				<button style="width:150px; border-radius: 5px;">Частые вопросы</button>
-			</form>
-		</div>
-		<div style="display:inline-block;">
-			<form action="germany/germany-faq.htm#modal1">
-				<button style="width:150px; border-radius: 5px;">Визовый календарь</button>
-			</form>
-		</div>
-	</div>
-	<div style="text-align: center;">
-			<a href="javascript:void(0);" onclick="history.back(); return false;" title="Назад">Назад</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../index.html" title="На главную">На главную</a>
-	</div>
+		<ul class="wrap">
+			<li><button onclick="window.location.href = 'visa/germany/germany-faq.htm#modal';">Частые вопросы</button></li>
+			<li><button onclick="window.location.href = 'visa/germany/germany-faq.htm#modal1';">Визовый календарь</button></li>
+		</ul>
+	</div>	
 	
 	<p style="text-align: center;"><br><strong>Туристические визы</strong></p>
 	<table class="t1">
@@ -74,7 +67,7 @@
 	<br>
 
 	<p style="text-align: center;"><strong>Документы, необходимые для оформления визы в Германию:</strong></p>
-	<ol>
+	<ul>
 		<li>Загранпаспорт, действительный не менее 3 месяцев с момента выезда из Германии.</li>
 		<li>Старый загранпаспорт или копия всех страниц с отметками (если есть).</li>
 		<li>Две цветные фотографии на белом фоне размером 3,5х4,5 см без уголков и овалов, размер лица – 32-35мм, не старше 6 месяцев.</li>
@@ -87,7 +80,7 @@
 		<li>Согласие на обработку персональных данных.</li>
 		<li>Доверенность на нашего представителя.</li>
 		<li>Для визы по вашему приглашению - или подтверждение бронирования отеля с указанием ФИО всех туристов; или оригинал частного приглашения с приложением копии паспорта приглашающего и контактного телефона.</li>
-	</ol>
+	</ul>
 
 	<details class = "item">
 		<summary class = "ask"><strong>Для детей и учащихся</strong></summary>
@@ -182,34 +175,25 @@
 			</ul>
 		</div>
 	</details>	
-	
-	<br>Опросный лист на визу в Германию: <a href="germany/oprlist_germany2021.docx" download>Скачать (20 кБ)</a>
-	<br>Согласие на обработку данных: <a href="germany/soglasie_germaniya.pdf" download>Скачать (82 кБ)</a>
-	<br>Доверенность на визу в Германию: <a href="germany/doverenost_germaniya.pdf" download>Скачать (100 кБ)</a>
-	<br>Доверенность на визу в Германию для несовершеннолетних: <a href="germany/doverenost_na_vizu_v_germaniyu_dlya_nesovershennoletnikh.pdf" download>Скачать (102 кБ)</a>
-	<br>Спонсорское письмо: <a href="germany/sponsorskoe_pismo_germaniya_0.pdf" download>Скачать (74 кБ)</a>
-	<br>Детальный план поездки в Германию (на автомобиле): <a href="germany/detalnyy-plan-poezdki_germaniya.pdf" download>Скачать (69 кБ)</a>
-	<br>Декларация, подтверждающая срочность деловой поездки (в период пандемии): <a href="germany/erklarung-zur-geschaftsreise-deu.pdf" download>Скачать (172 кБ)</a>
-	<br>Заявление о наличии партнерских отношений: <a href="germany/erklarung-zur-beziehung-deu_1.pdf" download>Скачать (133 кБ)</a>
-	<br><br>
 
-	<div style="text-align: center;">
-			<a href="javascript:void(0);" onclick="history.back(); return false;" title="Назад">Назад</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../index.html" title="На главную">На главную</a>
-	</div>	
 	<br>
-	<div style="text-align: center;">
-		<div style="display:inline-block;">
-			<form action="germany/germany-faq.htm#modal">
-				<button style="width:150px; border-radius: 5px;">Частые вопросы</button>
-			</form>
-		</div>
-		<div style="display:inline-block;">
-			<form action="germany/germany-faq.htm#modal1">
-				<button style="width:150px; border-radius: 5px;">Визовый календарь</button>
-			</form>
-		</div>
+
+	<div class="download">
+		<p>Документы для скачивания:</p>
+		<ul>
+			<li><a href="visa/germany/oprlist_germany2021.docx" download>Опросный лист на визу в Германию (20 кБ)</a></li>
+			<li><a href="visa/germany/soglasie_germaniya.pdf" download>Согласие на обработку данных (82 кБ)</a></li>
+			<li><a href="visa/germany/doverenost_germaniya.pdf" download>Доверенность на визу в Германию (100 кБ)</a></li>
+			<li><a href="visa/germany/doverenost_na_vizu_v_germaniyu_dlya_nesovershennoletnikh.pdf" download>Доверенность на визу в Германию для несовершеннолетних (102 кБ)</a></li>
+			<li><a href="visa/germany/sponsorskoe_pismo_germaniya_0.pdf" download>Спонсорское письмо (74 кБ)</a></li>
+			<li><a href="visa/germany/detalnyy-plan-poezdki_germaniya.pdf" download>Детальный план поездки в Германию (на автомобиле) (69 кБ)</a></li>
+			<li><a href="visa/germany/erklarung-zur-geschaftsreise-deu.pdf" download>Декларация, подтверждающая срочность деловой поездки (в период пандемии) (172 кБ)</a></li>
+			<li><a href="visa/germany/erklarung-zur-beziehung-deu_1.pdf" download>Заявление о наличии партнерских отношений (133 кБ)</a></li>
+	</ul>
 	</div>
 
+	<br>
+
+	<p class="back"><a href="javascript:void(0);" onclick="history.back(); return false;"><img src="images/sim-arrow-left.png" class="dlpic">  Назад</a></p>
 
 </div>
