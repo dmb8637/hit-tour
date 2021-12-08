@@ -1,23 +1,57 @@
-<script src="../jquery/jquery.js"></script> 
-<script async src="../jquery/table.js"></script> 
-<div class="aboutrus">
-    <h3 style="text-align: center;">Отдых в Тунисе, климат, достопримечательности, развлечения</h3>
-
-	<div style="text-align: center;">
-			<a href="javascript:void(0);" onclick="history.back(); return false;" title="Назад">Назад</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../index.html" title="На главную">На главную</a>
-	</div>
-		<p>
-			&nbsp;&nbsp;&nbsp;В городе <strong>Тунис</strong> туристам стоит прогуляться по колониальному проспекту Хабиба Бургибы, а также посетить старый город (медину), 
+<div class="wrap-content zerogrid">
+	<p class="back"><a href="javascript:void(0);" onclick="history.back(); return false;"><img src="images/sim-arrow-left.png" class="dlpic">  Назад</a></p>
+	<br>
+	<h3 style="text-align: center;">Отдых в Тунисе, климат, достопримечательности, развлечения</h3>
+	<br>
+	
+	<div class="p">
+			В городе <strong>Тунис</strong> туристам стоит прогуляться по колониальному проспекту Хабиба Бургибы, а также посетить старый город (медину), 
 			который был основан еще в 8 веке. Также интересны мечеть Зитуна и мавзолей Торбет-эль-Бей, дворцы Дар-эль-Бей и Дар-бен-Абделла, великолепный дворец Бардо, 
 			в котором работает потрясающий Музей мозаики.
 			<br>
-			&nbsp;&nbsp;&nbsp;<strong>Климат Туниса</strong> — субтропический средиземноморский на севере и вдоль побережья, на юге и во внутренних районах — тропический пустынный. 
+			Климат Туниса — субтропический средиземноморский на севере и вдоль побережья, на юге и во внутренних районах — тропический пустынный. 
 			Средние температуры января +10 °C на севере и +21 °C на юге, июля +26 °C на севере и +33 °C на юге.
 			Отдых в Тунисе хорош в любое время года, но всё-таки есть ярко выраженный сезон отдыха. Самые лучшие месяцы — это апрель-июнь и сентябрь-октябрь. 
 			Летом же, в разгар пляжного отдыха, в Тунисе очень жарко, и выбираться из-под кондиционера днём совсем не хочется.
-		</p>
-		<br>
+	</div>
+	<div class="sim-slider" id="first">
+		 <ul class="sim-slider-list">
+			 <li><img src="images/screen.gif" alt="screen"></li>    <!-- это экран -->
+			 <li class="sim-slider-element"><img src="countries/tunis/tunis1.jpg" alt="1"></li>
+			 <li class="sim-slider-element"><img src="countries/tunis/tunis2.jpg" alt="2"></li>
+			 <li class="sim-slider-element"><img src="countries/tunis/tunis3.jpg" alt="3"></li>
+			 <li class="sim-slider-element"><img src="countries/tunis/tunis4.jpg" alt="4"></li>
+			 <li class="sim-slider-element"><img src="countries/tunis/tunis5.jpg" alt="5"></li>
+			 <li class="sim-slider-element"><img src="countries/tunis/tunis6.jpg" alt="6"></li>
+			 <li class="sim-slider-element"><img src="countries/tunis/tunis7.jpg" alt="7"></li>
+			 <li class="sim-slider-element"><img src="countries/tunis/tunis8.jpg" alt="8"></li>
+			 <li class="sim-slider-element"><img src="countries/tunis/tunis9.jpg" alt="9"></li>
+			 <li class="sim-slider-element"><img src="countries/tunis/tunis10.jpg" alt="10"></li>
+			 <li class="sim-slider-element"><img src="countries/tunis/tunis11.jpg" alt="11"></li>
+			 <li class="sim-slider-element"><img src="countries/tunis/tunis12.jpg" alt="12"></li>
+			 <li class="sim-slider-element"><img src="countries/tunis/tunis13.jpg" alt="13"></li>
+		</ul>
+		 <div class="sim-slider-arrow-left"></div>
+		 <div class="sim-slider-arrow-right"></div>
+		 <div class="sim-slider-dots"></div>
+	 </div>
+
+	<div class="slider">
+			 <img src="countries/tunis/tunis1.jpg">
+			 <img src="countries/tunis/tunis2.jpg">
+			 <img src="countries/tunis/tunis3.jpg">
+			 <img src="countries/tunis/tunis4.jpg">
+			 <img src="countries/tunis/tunis5.jpg">
+			 <img src="countries/tunis/tunis6.jpg">
+			 <img src="countries/tunis/tunis7.jpg">
+			 <img src="countries/tunis/tunis8.jpg">
+			 <img src="countries/tunis/tunis9.jpg">
+			 <img src="countries/tunis/tunis10.jpg">
+			 <img src="countries/tunis/tunis11.jpg">
+			 <img src="countries/tunis/tunis12.jpg">
+			 <img src="countries/tunis/tunis13.jpg">
+	 </div>
+	 
 		<strong>Достопримечательности Туниса:</strong>
 		<ul>
 			<li>Карфаген</li>
@@ -45,10 +79,11 @@
 			<li>Танцующие фонтаны Сусса	</li>
 		</ul>
 
-	<div style="text-align: center;">
-			<a href="javascript:void(0);" onclick="history.back(); return false;" title="Назад">Назад</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../index.html" title="На главную">На главную</a>
-	</div>
-	<br>
-
+		<br>
+		
+	<p class="back"><a href="javascript:void(0);" onclick="history.back(); return false;"><img src="images/sim-arrow-left.png" class="dlpic">  Назад</a></p>
+	
 </div>
+<script src="js/sim-slider.js"></script>
+<!-- вызов слайдера -->
+<script>new Sim("first");</script>
