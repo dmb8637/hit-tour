@@ -143,18 +143,20 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
  .wrap-content .scrolling-wrapper button:hover {font-weight: bold;}
  
  .wrap-content .slider {
+	         width: auto;
+        height: auto;
   display: none;
   flex-wrap: nowrap;
   overflow-x:hidden;
+        justify-content: center;
+        align-items: center;
 
-  .card {
-    flex: 0 0 auto;
-  }
 }
  .wrap-content .slider img {	
-	padding: 15px;
-	width: 100%;
-	height: 100%;
+	padding: 10px;
+	height: auto;
+	width: auto;
+	flex: 0 0 auto;
  }
  
 .wrap-content .back{
