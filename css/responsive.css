@@ -62,12 +62,16 @@ img{max-width:100%;	height: auto; width: auto\9; }
 	.minimenu{display:block;}
 
 	.wrap-content .visa button{width:auto; min-width: 90px;}
-
+	.wrap-content .sim-slider {display: none;}
 	.wrap-header .tel {display:none;}
 	.wrap-header .telm {display:block;}
-	.block03 div[class*='col-'] {width:100%;}
+
 	.wrap-content .scrolling-wrapper {
 			overflow-x:auto; }
+	
+	.wrap-content .slider {
+			display: flex;
+			overflow-x:auto; }		
 	/* -------------------------------------------- */
 	/* ------------------Content------------------- */
 	.wrap-content table{ width: inherit; }
@@ -79,12 +83,12 @@ img{max-width:100%;	height: auto; width: auto\9; }
 	/* ------------------Other----------------*---- */
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 800px) {
 	/* -------------------------------------------- */
 	/* ------------------Header-------------------- */
 	/* -------------------------------------------- */
 	/* ------------------Content------------------- */
-
+	.block03 div[class*='col-'] {width:100%;}
 	/* -------------------------------------------- */
 	/* ------------------Footer-------------------- */
 	
