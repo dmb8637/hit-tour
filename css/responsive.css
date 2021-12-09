@@ -71,7 +71,8 @@ img{max-width:100%;	height: auto; width: auto\9; }
 	
 	.wrap-content .slider {
 			display: flex;
-			overflow-x:auto; }		
+			overflow-x:auto; }	
+		
 	/* -------------------------------------------- */
 	/* ------------------Content------------------- */
 	.wrap-content table{ width: inherit; }
@@ -89,6 +90,7 @@ img{max-width:100%;	height: auto; width: auto\9; }
 	/* -------------------------------------------- */
 	/* ------------------Content------------------- */
 	.block03 div[class*='col-'] {width:100%;}
+	
 	/* -------------------------------------------- */
 	/* ------------------Footer-------------------- */
 	
