@@ -153,3 +153,5 @@ a.openModal:focus {
   text-align: center;
   font-size: 22pt;
 }
+
+.modal .answer {text-align: justify;text-indent: 25px;}
