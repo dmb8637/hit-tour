@@ -1,19 +1,61 @@
-<script src="../jquery/jquery.js"></script> 
-<script async src="../jquery/table.js"></script> 
-<div class="aboutrus">
-    <h3 style="text-align: center;">Отдых в Тайланде, климат, достопримечательности, развлечения</h3>
-
-	<div style="text-align: center;">
-			<a href="javascript:void(0);" onclick="history.back(); return false;" title="Назад">Назад</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../index.html" title="На главную">На главную</a>
-	</div>
-		<p>
-			&nbsp;&nbsp;&nbsp;Страна вытянута с севера на юг, поэтому климат в разных ее частях отличается: на севере — тропический, в центральной части — субэкваториальный, а на юге — экваториальный.
+<div class="wrap-content zerogrid">
+	<p class="back"><a href="javascript:void(0);" onclick="history.back(); return false;"><img src="images/sim-arrow-left.png" class="dlpic">  Назад</a></p>
+	<br>
+	<h3 style="text-align: center;">Отдых в Тайланде, климат, достопримечательности, развлечения</h3>
+	<br>
+	
+	<div class="p">
+			Страна вытянута с севера на юг, поэтому климат в разных ее частях отличается: на севере — тропический, в центральной части — субэкваториальный, а на юге — экваториальный.
 			Условно в Таиланде можно выделить три сезона. С мая по октябрь — жаркий и влажный сезон. Средняя температура воздуха в это время — +33 °C, воды — +29 °C. 
-			Часто идут короткие дожди. После них выглядывает солнце, все быстро высыхает и можно снова купаться в море.
-		
-		</p>
-		<br>
+			Часто идут короткие дожди. После них выглядывает солнце, все быстро высыхает и можно снова купаться в море.			
+	</div>
+	<div class="sim-slider" id="first">
+		 <ul class="sim-slider-list">
+			 <li><img src="images/screen.gif" alt="screen"></li>    <!-- это экран -->
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand1.jpg" alt="1"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand2.jpg" alt="2"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand3.jpg" alt="3"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand4.jpg" alt="4"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand5.jpg" alt="5"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand6.jpg" alt="6"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand7.jpg" alt="7"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand8.jpg" alt="8"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand9.jpg" alt="9"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand10.jpg" alt="10"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand11.jpg" alt="11"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand12.jpg" alt="12"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand13.jpg" alt="13"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand14.jpg" alt="14"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand15.jpg" alt="15"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand16.jpg" alt="16"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand17.jpg" alt="17"></li>
+			 <li class="sim-slider-element"><img src="countries/thailand/thailand18.jpg" alt="18"></li>
+		 </ul>
+		 <div class="sim-slider-arrow-left"></div>
+		 <div class="sim-slider-arrow-right"></div>
+		 <div class="sim-slider-dots"></div>
+	 </div>
+
+	<div class="slider">
+			 <img src="countries/thailand/thailand1.jpg">
+			 <img src="countries/thailand/thailand2.jpg">
+			 <img src="countries/thailand/thailand3.jpg">
+			 <img src="countries/thailand/thailand4.jpg">
+			 <img src="countries/thailand/thailand5.jpg">
+			 <img src="countries/thailand/thailand6.jpg">
+			 <img src="countries/thailand/thailand7.jpg">
+			 <img src="countries/thailand/thailand8.jpg">
+			 <img src="countries/thailand/thailand9.jpg">
+			 <img src="countries/thailand/thailand10.jpg">
+			 <img src="countries/thailand/thailand11.jpg">
+			 <img src="countries/thailand/thailand12.jpg">
+			 <img src="countries/thailand/thailand13.jpg">
+			 <img src="countries/thailand/thailand14.jpg">
+			 <img src="countries/thailand/thailand15.jpg">
+			 <img src="countries/thailand/thailand16.jpg">
+			 <img src="countries/thailand/thailand17.jpg">
+			 <img src="countries/thailand/thailand18.jpg">
+	</div>
 		<strong>Достопримечательности Тайланда:</strong>
 		<ul>
 			<li>Тиффани шоу (г. Паттайя)</li>
@@ -32,10 +74,11 @@
 			<li>Национальный парк Кхао-Яй (провинция Накхонратчасима)</li>
 		</ul>
 
-	<div style="text-align: center;">
-			<a href="javascript:void(0);" onclick="history.back(); return false;" title="Назад">Назад</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../index.html" title="На главную">На главную</a>
-	</div>
-	<br>
-
+		<br>
+		
+	<p class="back"><a href="javascript:void(0);" onclick="history.back(); return false;"><img src="images/sim-arrow-left.png" class="dlpic">  Назад</a></p>
+	
 </div>
+<script src="js/sim-slider.js"></script>
+<!-- вызов слайдера -->
+<script>new Sim("first");</script>
