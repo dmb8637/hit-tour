@@ -1,20 +1,51 @@
-<script src="../jquery/jquery.js"></script> 
-<script async src="../jquery/table.js"></script> 
-<div class="aboutrus">
-    <h3 style="text-align: center;">Отдых в Греции, климат, достопримечательности, развлечения</h3>
-
-	<div style="text-align: center;">
-			<a href="javascript:void(0);" onclick="history.back(); return false;" title="Назад">Назад</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../index.html" title="На главную">На главную</a>
+<div class="wrap-content zerogrid">
+	<p class="back"><a href="javascript:void(0);" onclick="history.back(); return false;"><img src="images/sim-arrow-left.png" class="dlpic">  Назад</a></p>
+	<br>
+	<h3 style="text-align: center;">Отдых в Греции, климат, достопримечательности, развлечения</h3>
+	<br>
+	
+	<div class="p">
+			По большей части на территории <strong>Греции</strong> царит средиземноморский климат с жарким сухим летом и мягкой дождливой зимой. 
+			Греция идеально подходит для тех, кто любит солнце, поскольку более 2/3 года здесь ясное, солнечное небо, а длительные дожди — редкое явление.
 	</div>
-		<p>
-			&nbsp;&nbsp;&nbsp;По большей части на территории <strong>Греции</strong> царит средиземноморский климат с жарким сухим летом и мягкой дождливой зимой. 
-			Греция идеально подходит для тех, кто любит солнце, поскольку более 2/3 года здесь ясное, солнечное небо, 
-			а длительные дожди — редкое явление. Сезоны в Греции. 
-			<br>
-			&nbsp;&nbsp;&nbsp;В Греции выделяют два сезона — жаркий и сухой период с апреля по сентябрь; мягкий и влажный с октября по март.
-		</p>
-		<br>
+	<div class="p"><strong>Сезоны в Греции</strong> В Греции выделяют два сезона — жаркий и сухой период с апреля по сентябрь; мягкий и влажный с октября по март.
+	</div>
+	
+	<div class="sim-slider" id="first">
+		 <ul class="sim-slider-list">
+			 <li><img src="images/screen.gif" alt="screen"></li>    <!-- это экран -->
+			 <li class="sim-slider-element"><img src="countries/greece/greece1.jpg" alt="1"></li>
+			 <li class="sim-slider-element"><img src="countries/greece/greece2.jpg" alt="2"></li>
+			 <li class="sim-slider-element"><img src="countries/greece/greece3.jpg" alt="3"></li>
+			 <li class="sim-slider-element"><img src="countries/greece/greece4.jpg" alt="4"></li>
+			 <li class="sim-slider-element"><img src="countries/greece/greece5.jpg" alt="5"></li>
+			 <li class="sim-slider-element"><img src="countries/greece/greece6.jpg" alt="6"></li>
+			 <li class="sim-slider-element"><img src="countries/greece/greece7.jpg" alt="7"></li>
+			 <li class="sim-slider-element"><img src="countries/greece/greece8.jpg" alt="8"></li>
+			 <li class="sim-slider-element"><img src="countries/greece/greece9.jpg" alt="9"></li>
+			 <li class="sim-slider-element"><img src="countries/greece/greece10.jpg" alt="10"></li>
+			 <li class="sim-slider-element"><img src="countries/greece/greece11.jpg" alt="11"></li>
+			 <li class="sim-slider-element"><img src="countries/greece/greece12.jpg" alt="12"></li>
+		 </ul>
+		 <div class="sim-slider-arrow-left"></div>
+		 <div class="sim-slider-arrow-right"></div>
+		 <div class="sim-slider-dots"></div>
+	 </div>
+
+	<div class="slider">
+			 <img src="countries/greece/greece1.jpg">
+			 <img src="countries/greece/greece2.jpg">
+			 <img src="countries/greece/greece3.jpg">
+			 <img src="countries/greece/greece4.jpg">
+			 <img src="countries/greece/greece5.jpg">
+			 <img src="countries/greece/greece6.jpg">
+			 <img src="countries/greece/greece7.jpg">
+			 <img src="countries/greece/greece8.jpg">
+			 <img src="countries/greece/greece9.jpg">
+			 <img src="countries/greece/greece10.jpg">
+			 <img src="countries/greece/greece11.jpg">
+			 <img src="countries/greece/greece12.jpg">
+	</div>
 		<strong>Достопримечательности Греции:</strong>
 		<ul>
 			<li>Афинский акрополь (г. Афины)</li>
@@ -32,11 +63,11 @@
 			<li>Аквариум Крита (г. Гурне)</li>
 			<li>Остров Делос (архипелаг Киклады)</li>	
 		</ul>
-
-	<div style="text-align: center;">
-			<a href="javascript:void(0);" onclick="history.back(); return false;" title="Назад">Назад</a>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="../index.html" title="На главную">На главную</a>
-	</div>
-	<br>
-
+		<br>
+		
+	<p class="back"><a href="javascript:void(0);" onclick="history.back(); return false;"><img src="images/sim-arrow-left.png" class="dlpic">  Назад</a></p>
+	
 </div>
+<script src="js/sim-slider.js"></script>
+<!-- вызов слайдера -->
+<script>new Sim("first");</script>
