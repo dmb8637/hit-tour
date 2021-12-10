@@ -155,4 +155,10 @@ a.openModal:focus {
 }
 
 .modal .answer {text-align: justify;text-indent: 25px;}
-.modal img:hover {transform: scale(1.3);}
+.modal img {width:50%; height:auto;}
+/* .modal img:hover {transform: scale(1.3);} */
+
+@media only screen and (max-width: 1000px) {
+	.modal img { width:100%;  }
+	
+}
