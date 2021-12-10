@@ -1,20 +1,22 @@
 .sim-slider-list img {
-  width: 100%; !important; 
+	width: auto;
+	height: 437px;
 }
 
 .sim-slider {
-  max-width: 1000px;
-  min-width: 180px;
+  max-width: 700px;
+  min-width: 180px;	
   margin: 20px auto;
   padding: 30px 50px;
   border: 1px solid #ccd;
   background-color: #FFE4B5;
-  overflow: hidden; 
+  /*overflow: hidden; */
 }
 
 /* General styles */
 .sim-slider {
   position: relative;
+  text-align: center;
 }
 
 .sim-slider-list {

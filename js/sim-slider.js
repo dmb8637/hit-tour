@@ -1,12 +1,14 @@
 function Sim(sldrId) {
 
 	let id = document.getElementById(sldrId);
+
 	if(id) {
 		this.sldrRoot = id
 	}
 	else {
 		this.sldrRoot = document.querySelector('.sim-slider')
 	};
+
 
 	// Carousel objects
 	this.sldrList = this.sldrRoot.querySelector('.sim-slider-list');
@@ -54,6 +56,7 @@ Sim.prototype.elemPrev = function(num) {
 };
 
 Sim.prototype.elemNext = function(num) {
+	
 	num = num || 1;
 	
 	let prevElement = this.currentElement;
@@ -68,6 +71,8 @@ Sim.prototype.elemNext = function(num) {
 	};
 
 	this.sldrElements[this.currentElement].style.opacity = '1';
+
+	
 	this.sldrElements[prevElement].style.opacity = '0';
 
 	if(this.options.dots) {
@@ -170,4 +175,4 @@ Sim.initialize = function(that) {
 	}
 };
 
-new Sim();
+/* new Sim(); */

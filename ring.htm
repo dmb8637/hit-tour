@@ -15,6 +15,7 @@
 
 
 <script type="text/javascript">
+
 	window.addEventListener("DOMContentLoaded", function() {
 	function setCursorPosition(pos, elem) {
    		 elem.focus();
@@ -25,9 +26,10 @@
         		range.moveEnd("character", pos);
         		range.moveStart("character", pos);
         		range.select()
-   		 }
+			}	
 		}
 
+	
 	function mask(event) {
     		var matrix = "+7 (___) ___ ____",
        		 i = 0,
@@ -40,14 +42,14 @@
     		if (event.type == "blur") {
         		if (this.value.length == 2) this.value = ""
    		 } else setCursorPosition(this.value.length, this)
-		};
 
-    		var input = document.querySelector("#tel");
-    		input.addEventListener("input", mask, false);
-    		input.addEventListener("focus", mask, false);
-    		input.addEventListener("blur", mask, false);
-		});
 
+	};
+			var input = document.querySelector("#tel");
+		input.addEventListener("input", mask, false);
+		input.addEventListener("focus", mask, false);
+		input.addEventListener("blur", mask, false);
+	});		
 </script>
 </head>
 

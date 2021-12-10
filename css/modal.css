@@ -155,3 +155,4 @@ a.openModal:focus {
 }
 
 .modal .answer {text-align: justify;text-indent: 25px;}
+.modal img:hover {transform: scale(1.3);}
