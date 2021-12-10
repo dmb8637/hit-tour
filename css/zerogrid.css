@@ -25,7 +25,7 @@ Author URI: http://www.zerotheme.com/
 
 .zerogrid .col-1-2{width:50%;}
 
-.block03 div[class*='col-'] {width:33.33%;}
+.block03 div[class*='col-'] {width:33.33%;float:left; display: inline-block;}
 /* .zerogrid .col-4-3{width:33.33%;}
 .zerogrid .col-5-3{width:33.33%;}
 .zerogrid .col-6-3{width:33.33%;}

@@ -263,6 +263,7 @@ footer .heading h2{font-size:22px; font-weight:normal; display:inline; padding:0
 footer .content{padding:5px}
 footer .content a{color:#DA251D; text-decoration:none;}
 footer .content .gallery img{ float:left; padding:5px; border:1px solid #CCC; margin:5px;}
+footer .col-2-3 img {width:180px; height:99px;}
 
 .copyright{text-align:center; margin-top:20px;}
 .copyright a{color:#ffffff; text-decoration:underline;}
