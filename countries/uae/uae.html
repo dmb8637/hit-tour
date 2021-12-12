@@ -2,9 +2,9 @@
 	function imgsign() {
 		$('.sim-slider-element img[title]').each( function(index) {
 			if($(this).parent().css('opacity')>0.5){
-				<!-- alert($(this).parent().css('opacity') + ' - ' + $(this).attr('title')); -->
+				<!-- console.log($(this).parent().css('opacity') + ' - ' + $(this).attr('title')); -->
 				var st = $(this).attr('title');
-				$('.slider-sign label').replaceWith('<label>' + (st ? st : "") + '</label>');
+				$('.slider-sign label').replaceWith('<label><i>' + (st ? st : "") + '</i></label>');
 			}
 		});
 	}
@@ -24,30 +24,34 @@
 		  left: window.pageXOffset,
 		  right: window.pageXOffset + document.documentElement.clientWidth
 		};
-<!-- 		console.log(index + "\ntargetPosition.right=" + targetPosition.right + "\ntargetPosition.left="+targetPosition.left+"\nwindowPosition.left="+windowPosition.left + "\nwindowPosition.right="+windowPosition.right);
- -->		
+		/*console.log(index + "\ntargetPosition.right=" + targetPosition.right + "\ntargetPosition.left="+targetPosition.left+
+						"\nwindowPosition.left="+windowPosition.left + "\nwindowPosition.right="+windowPosition.right);*/
+		
 	  if (
 			(targetPosition.right-windowPosition.right*0.2)<windowPosition.right &&
 			(targetPosition.left+windowPosition.right*0.2)>windowPosition.left
 		) { 
-			$('.slider-sign1 label').replaceWith('<label>' + target.getAttribute('alt') + '</label>');
+			$('.slider-sign1 label').replaceWith('<label><i>' + target.getAttribute('alt') + '</i></label>');
 	  } else {
 		// Если элемент не видно, то запускаем этот код
 		
-	  };
+	  }
 	};
 
 	function runslidersign(){
-	<!-- console.clear(); -->
-	$('.slider-sign1 label').replaceWith('<label></label>');
+	<!-- 	console.clear(); -->
+		$('.slider-sign1 label').replaceWith('<label></label>');
 		$('.slider img[alt]').each(function(index){
 			Visible(this, index);
 		})
 	}
-	$(function(){
+
+	let timerId = setInterval(() => setTimeout(runslidersign, 100), 1000);
+	setTimeout(() => { clearInterval(timerId); }, 5000);
+
+	$('.slider').on('scroll', function(){
 		setTimeout(runslidersign, 100);
 	});
-
 
 </script>
 <div class="wrap-content zerogrid">
@@ -186,7 +190,7 @@
 	<div class="sim-slider" id="first">
 		 <ul class="sim-slider-list">
 			 <li><img src="images/screen.gif" alt="screen"></li>    <!-- это экран -->
-			 <li class="sim-slider-element"><img src="countries/uae/uae1.jpg" alt="1" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae1.jpg" alt="1" title="Отель Парус (Бурдж-эль-Араб)"></li>
 			 <li class="sim-slider-element"><img src="countries/uae/uae2.jpg" alt="2" title=""></li>
 			 <li class="sim-slider-element"><img src="countries/uae/uae3.jpg" alt="3" title="Бурдж-Халифа (г.Дубай)"></li>
 			 <li class="sim-slider-element"><img src="countries/uae/uae4.jpg" alt="4" title=""></li>
@@ -221,8 +225,8 @@
 		</div>		 
 	 </div>
 	 
-	<div class="slider" onscroll="setTimeout(runslidersign, 100);">
-			 <img src="countries/uae/uae1.jpg" alt="">
+	<div class="slider">
+			 <img src="countries/uae/uae1.jpg" alt="Отель Парус (Бурдж-эль-Араб)">
 			 <img src="countries/uae/uae2.jpg" alt="">
 			 <img src="countries/uae/uae3.jpg" alt="Бурдж-Халифа (г.Дубай)">	
 			 <img src="countries/uae/uae4.jpg" alt="">
