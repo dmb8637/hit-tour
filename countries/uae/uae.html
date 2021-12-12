@@ -24,13 +24,13 @@
 		  left: window.pageXOffset,
 		  right: window.pageXOffset + document.documentElement.clientWidth
 		};
-		
-	  if (targetPosition.right < windowPosition.right && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
-		targetPosition.left > windowPosition.left) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
-		// Если элемент полностью видно, то запускаем следующий код
-		
-		<!-- console.log(index + "\ntargetPosition.right=" + targetPosition.right + "\ntargetPosition.left="+targetPosition.left+"\nwindowPosition.left="+windowPosition.left + "\nwindowPosition.right="+windowPosition.right); -->
-		$('.slider-sign1 label').replaceWith('<label>' + target.getAttribute('alt') + '</label>');
+<!-- 		console.log(index + "\ntargetPosition.right=" + targetPosition.right + "\ntargetPosition.left="+targetPosition.left+"\nwindowPosition.left="+windowPosition.left + "\nwindowPosition.right="+windowPosition.right);
+ -->		
+	  if (
+			(targetPosition.right-windowPosition.right*0.2)<windowPosition.right &&
+			(targetPosition.left+windowPosition.right*0.2)>windowPosition.left
+		) { 
+			$('.slider-sign1 label').replaceWith('<label>' + target.getAttribute('alt') + '</label>');
 	  } else {
 		// Если элемент не видно, то запускаем этот код
 		
@@ -41,7 +41,6 @@
 	<!-- console.clear(); -->
 	$('.slider-sign1 label').replaceWith('<label></label>');
 		$('.slider img[alt]').each(function(index){
-			<!-- console.log('Проверяем элемент ' + index); -->
 			Visible(this, index);
 		})
 	}
@@ -224,9 +223,9 @@
 	 
 	<div class="slider" onscroll="setTimeout(runslidersign, 100);">
 			 <img src="countries/uae/uae1.jpg" alt="">
-			 <img src="countries/uae/uae2.jpg">
+			 <img src="countries/uae/uae2.jpg" alt="">
 			 <img src="countries/uae/uae3.jpg" alt="Бурдж-Халифа (г.Дубай)">	
-			 <img src="countries/uae/uae4.jpg">
+			 <img src="countries/uae/uae4.jpg" alt="">
 			 <img src="countries/uae/uae5.jpg" alt="Острова Пальм (г.Дубай)">
 			 <img src="countries/uae/uae6.jpg" />
 			 <img src="countries/uae/uae7.jpg" />

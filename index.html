@@ -55,6 +55,14 @@
 
 				}
 		});	
+
+		var d = new Date(document.lastModified);
+		var dateString = (d.getDate() < 10 ? '0' + d.getDate() : d.getDate()) + ' ' + 
+					 d.toLocaleString('ru', { month: 'long' }) + ' ' + d.getFullYear() + ' г. ' + d.getHours() + ':'+d.getMinutes()+':'+d.getSeconds();
+		
+		$(function(){
+			$('.copyright p').replaceWith('<p>Copyright © 2021 <a href="https://www.hit-tour.ru" target="_blank">Турагенство</a> hit-tour.ru<br>Сайт обновлен: '+dateString+'</p>');
+		});
 		
 	</script>
 
