@@ -17,7 +17,8 @@ function Sim(sldrId) {
 	this.leftArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-left');
 	this.rightArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-right');
 	this.indicatorDots = this.sldrRoot.querySelector('div.sim-slider-dots');
-
+/* 	this.imgsign = this.sldrRoot.querySelector('.slider-sign label'); */
+	
 	// Initialization
 	this.options = Sim.defaults;
 	Sim.initialize(this)
@@ -71,7 +72,7 @@ Sim.prototype.elemNext = function(num) {
 	};
 
 	this.sldrElements[this.currentElement].style.opacity = '1';
-
+/* 	this.imgsign.replaceWith('<label>' + this.sldrElements[this.currentElement].querySelector('img').getAttribute('title') + '</label>'); */
 	
 	this.sldrElements[prevElement].style.opacity = '0';
 

@@ -18,6 +18,9 @@
   position: relative;
   text-align: center;
 }
+.sim-slider .slider-sign {
+	font-weight: bold;
+}
 
 .sim-slider-list {
   margin: 0;

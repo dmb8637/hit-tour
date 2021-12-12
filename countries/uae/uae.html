@@ -1,3 +1,56 @@
+<script>
+	function imgsign() {
+		$('.sim-slider-element img[title]').each( function(index) {
+			if($(this).parent().css('opacity')>0.5){
+				<!-- alert($(this).parent().css('opacity') + ' - ' + $(this).attr('title')); -->
+				var st = $(this).attr('title');
+				$('.slider-sign label').replaceWith('<label>' + (st ? st : "") + '</label>');
+			}
+		});
+	}
+
+	$(function(){
+		setTimeout(imgsign, 100);
+	});
+
+	var Visible = function (target, index) {
+	  // Все позиции элемента
+	  var targetPosition = {
+		  left: target.getBoundingClientRect().left,
+		  right: window.pageXOffset + target.getBoundingClientRect().right
+		},
+		// Получаем позиции окна
+		windowPosition = {
+		  left: window.pageXOffset,
+		  right: window.pageXOffset + document.documentElement.clientWidth
+		};
+		
+	  if (targetPosition.right < windowPosition.right && // Если позиция правой стороны элемента больше позиции левой части окна, то элемент виден слева
+		targetPosition.left > windowPosition.left) { // Если позиция левой стороны элемента меньше позиции правой чайти окна, то элемент виден справа
+		// Если элемент полностью видно, то запускаем следующий код
+		
+		<!-- console.log(index + "\ntargetPosition.right=" + targetPosition.right + "\ntargetPosition.left="+targetPosition.left+"\nwindowPosition.left="+windowPosition.left + "\nwindowPosition.right="+windowPosition.right); -->
+		$('.slider-sign1 label').replaceWith('<label>' + target.getAttribute('alt') + '</label>');
+	  } else {
+		// Если элемент не видно, то запускаем этот код
+		
+	  };
+	};
+
+	function runslidersign(){
+	<!-- console.clear(); -->
+	$('.slider-sign1 label').replaceWith('<label></label>');
+		$('.slider img[alt]').each(function(index){
+			<!-- console.log('Проверяем элемент ' + index); -->
+			Visible(this, index);
+		})
+	}
+	$(function(){
+		setTimeout(runslidersign, 100);
+	});
+
+
+</script>
 <div class="wrap-content zerogrid">
 	<p class="back"><a href="javascript:void(0);" onclick="history.back(); return false;"><img src="images/sim-arrow-left.png" class="dlpic">  Назад</a></p>
 	<br>
@@ -134,66 +187,73 @@
 	<div class="sim-slider" id="first">
 		 <ul class="sim-slider-list">
 			 <li><img src="images/screen.gif" alt="screen"></li>    <!-- это экран -->
-			 <li class="sim-slider-element"><img src="countries/uae/uae1.jpg" alt="1"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae2.jpg" alt="2"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae3.jpg" alt="3"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae4.jpg" alt="4"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae5.jpg" alt="5"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae6.jpg" alt="6"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae7.jpg" alt="7"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae8.jpg" alt="8"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae9.jpg" alt="9"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae10.jpg" alt="10"></li>
-<!-- 			 <li class="sim-slider-element"><img src="countries/uae/uae11.jpg" alt="11"></li> -->
-			 <li class="sim-slider-element"><img src="countries/uae/uae12.jpg" alt="12"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae13.jpg" alt="13"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae14.jpg" alt="14"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae15.jpg" alt="15"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae16.jpg" alt="16"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae17.jpg" alt="17"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae18.jpg" alt="18"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae19.jpg" alt="19"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae20.jpg" alt="20"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae21.jpg" alt="21"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae22.jpg" alt="22"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae23.jpg" alt="23"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae24.jpg" alt="24"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae25.jpg" alt="25"></li>
-			 <li class="sim-slider-element"><img src="countries/uae/uae26.jpg" alt="26"></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae1.jpg" alt="1" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae2.jpg" alt="2" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae3.jpg" alt="3" title="Бурдж-Халифа (г.Дубай)"></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae4.jpg" alt="4" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae5.jpg" alt="5" title="Острова Пальм (г.Дубай)"></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae6.jpg" alt="6" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae7.jpg" alt="7" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae8.jpg" alt="8" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae9.jpg" alt="9" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae10.jpg" alt="10" title=""></li>
+<!-- 			 <li class="sim-slider-element"><img src="countries/uae/uae11.jpg" alt="11" title=""></li> -->
+			 <li class="sim-slider-element"><img src="countries/uae/uae12.jpg" alt="12" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae13.jpg" alt="13" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae14.jpg" alt="14" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae15.jpg" alt="15" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae16.jpg" alt="16" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae17.jpg" alt="17" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae18.jpg" alt="18" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae19.jpg" alt="19" title="Горнолыжный комплекс «Ски Дубай» (г.Дубай)"></li> 
+			 <li class="sim-slider-element"><img src="countries/uae/uae20.jpg" alt="20" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae21.jpg" alt="21" title="Тематический парк Ferrari World (г.Абу-Даби)"></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae22.jpg" alt="22" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae23.jpg" alt="23" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae24.jpg" alt="24" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae25.jpg" alt="25" title=""></li>
+			 <li class="sim-slider-element"><img src="countries/uae/uae26.jpg" alt="26" title=""></li>
 		 </ul>
-		 <div class="sim-slider-arrow-left"></div>
-		 <div class="sim-slider-arrow-right"></div>
+		 <div class="sim-slider-arrow-left" onclick='setTimeout(imgsign, 1000);'></div>
+		 <div class="sim-slider-arrow-right" onclick='setTimeout(imgsign, 1000);'></div>
 		 <div class="sim-slider-dots"></div>
+		<div class="slider-sign">
+			<label>Подпись для фото</label>
+		</div>		 
 	 </div>
 	 
-	<div class="slider">
-			 <img src="countries/uae/uae1.jpg">
+	<div class="slider" onscroll="setTimeout(runslidersign, 100);">
+			 <img src="countries/uae/uae1.jpg" alt="">
 			 <img src="countries/uae/uae2.jpg">
-			 <img src="countries/uae/uae3.jpg">
+			 <img src="countries/uae/uae3.jpg" alt="Бурдж-Халифа (г.Дубай)">	
 			 <img src="countries/uae/uae4.jpg">
-			 <img src="countries/uae/uae5.jpg">
-			 <img src="countries/uae/uae6.jpg">
-			 <img src="countries/uae/uae7.jpg">
-			 <img src="countries/uae/uae8.jpg">
-			 <img src="countries/uae/uae9.jpg">
-			 <img src="countries/uae/uae10.jpg">
-	<!-- 		 <img src="countries/uae/uae11.jpg"> -->
-			 <img src="countries/uae/uae12.jpg">
-			 <img src="countries/uae/uae13.jpg">
-			 <img src="countries/uae/uae14.jpg">
-			 <img src="countries/uae/uae15.jpg">
-			 <img src="countries/uae/uae16.jpg">
-			 <img src="countries/uae/uae17.jpg">
-			 <img src="countries/uae/uae18.jpg">
-			 <img src="countries/uae/uae19.jpg">
-			 <img src="countries/uae/uae20.jpg">
-			 <img src="countries/uae/uae21.jpg">
-			 <img src="countries/uae/uae22.jpg">
-			 <img src="countries/uae/uae23.jpg">
-			 <img src="countries/uae/uae24.jpg">
-			 <img src="countries/uae/uae25.jpg">
-			 <img src="countries/uae/uae26.jpg">
+			 <img src="countries/uae/uae5.jpg" alt="Острова Пальм (г.Дубай)">
+			 <img src="countries/uae/uae6.jpg" />
+			 <img src="countries/uae/uae7.jpg" />
+			 <img src="countries/uae/uae8.jpg" />
+			 <img src="countries/uae/uae9.jpg" />
+			 <img src="countries/uae/uae10.jpg" />
+	<!-- 		 <img src="countries/uae/uae11.jpg" /> -->
+			 <img src="countries/uae/uae12.jpg" />
+			 <img src="countries/uae/uae13.jpg" />
+			 <img src="countries/uae/uae14.jpg" />
+			 <img src="countries/uae/uae15.jpg" />
+			 <img src="countries/uae/uae16.jpg" />
+			 <img src="countries/uae/uae17.jpg" />
+			 <img src="countries/uae/uae18.jpg" />
+			 <img src="countries/uae/uae19.jpg" alt="Горнолыжный комплекс «Ски Дубай» (г.Дубай)">
+			 <img src="countries/uae/uae20.jpg" />
+			 <img src="countries/uae/uae21.jpg" alt="Тематический парк Ferrari World (г.Абу-Даби)">
+			 <img src="countries/uae/uae22.jpg" />
+			 <img src="countries/uae/uae23.jpg" />
+			 <img src="countries/uae/uae24.jpg" />
+			 <img src="countries/uae/uae25.jpg" />
+			 <img src="countries/uae/uae26.jpg" />
 	 </div>
+	 	<div class="slider-sign1" style='text-align:center; font-weight:bold;'>
+			<label></label>
+		</div>
+		<br>
 	<strong>Достопримечательности ОАЭ:</strong>
 	<ul>
 		<li>Бурдж-Халифа (г. Дубай)</li>
