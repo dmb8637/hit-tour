@@ -71,7 +71,9 @@ img{max-width:100%;	height: auto; width: auto\9; }
 	
 	.wrap-content .slider {
 			display: flex;
-			overflow-x:auto; }	
+			overflow-x:auto; }
+	
+	.wrap-content .slider-sign1	{display:block;}		
 		
 	/* -------------------------------------------- */
 	/* ------------------Content------------------- */

@@ -160,6 +160,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 		font-size: xx-small;
    }
    
+   .wrap-content .slider-sign1	{display:none;}
     /* ------------------------------------------------------------*/
  .wrap-content .slider {
 	width: auto;
