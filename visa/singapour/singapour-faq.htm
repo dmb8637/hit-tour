@@ -12,32 +12,32 @@
   ================================================== -->	
 	<link rel="stylesheet" href="../../css/modal.css">
 
-<script type="text/javascript">
+	<script type="text/javascript">
 
-	window.addEventListener("DOMContentLoaded", function() {
-	function setCursorPosition(pos, elem) {
-   		 elem.focus();
-   		 if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
-    		else if (elem.createTextRange) {
-       		 var range = elem.createTextRange();
-       		 range.collapse(true);
-        		range.moveEnd("character", pos);
-        		range.moveStart("character", pos);
-        		range.select()
+		window.addEventListener("DOMContentLoaded", function() {
+		function setCursorPosition(pos, elem) {
+			 elem.focus();
+			 if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+				else if (elem.createTextRange) {
+				 var range = elem.createTextRange();
+				 range.collapse(true);
+					range.moveEnd("character", pos);
+					range.moveStart("character", pos);
+					range.select()
+				}
 			}
-		}
-	});
-</script>
-	</head>
+		});
+	</script>
+</head>
 
 <body>
 	<div id="modal1" class="modal">
 		<div>
-			<h3>Визовый календарь</h3>
-			Нерабочие дни консульства
-			<ul>
-				<li></li>
-			</ul>
+			<div style='text-align: center;'>
+				<h3>Визовый календарь. Нерабочие дни консульства</h3>		
+				<br>
+				<img src='calendar-business-2022-singapore.jpg'>
+			</div>
 			<a href="#close" onclick="history.back(); return false;" title="Закрыть">Закрыть</a>
 		</div>
 	</div>
@@ -47,13 +47,47 @@
 		<h3>ЧАСТЫЕ ВОПРОСЫ</h3>
 
 		<details class = "item">
-			<summary class = "ask"><strong></strong></summary>
+			<summary class = "ask"><strong>Обязательно приезжать в офис для подачи документов?</strong></summary>
 				<div class = "answer">
-					<p class="mod">
+					<p class="mod">Виза в ОАЭ или в Сингапур делается в электронной форме и оригинал загранпаспорта для нее нам не нужен. Все документы для оформления визы можно прислать нам на е-мэйл и дистанционно оплатить заказ. Готовые визы мы также пришлем Вам по е-мэйлу.
 					</p>
 				</div>
 		</details>		
 		<br>
+
+		<details class = "item">
+			<summary class = "ask"><strong>Можно ли находиться в Сингапуре без визы?</strong></summary>
+				<div class = "answer">
+					<p class="mod">Путешественники, которые летят через Сингапур в другие страны, могут находиться в Сингапуре без визы, но не более 96 часов. При этом обязательно наличие билетов с фиксированной датой вылета и визы страны основного назначения.
+					</p>
+				</div>
+		</details>		
+		<br>
+
+		<details class = "item">
+			<summary class = "ask"><strong>Какой срок действия у визы в Сингапур?</strong></summary>
+				<div class = "answer">
+					<p class="mod">Виза в Сингапур позволяет многократный въезд в страну в течение срока действия визы (9 недель), который начинается со дня выдачи визы. При этом каждый въезд в страну не должен превышать более 30 дней.
+					</p>
+				</div>
+		</details>		
+		<br>
+
+		<details class = "item">
+			<summary class = "ask"><strong>Сколько стоит сингапурская виза?</strong></summary>
+				<div class = "answer">
+					<p class="mod">В зависимости от сроков оформления мы предлагаем цены на оформление несрочной визы в Сингапур за 75$ и срочной визы за 110$ .
+					</p>
+				</div>
+		</details>		
+		<br>
+
+		<details class = "item">
+			<summary class = "ask"><strong>Можно ли заказать доставку документов в регионы?</strong></summary>
+				<div class = "answer">
+					<p class="mod">Вся информация о курьерской доставке <button onclick="window.location.href='../../index.html?courier';">здесь</button></p>
+				</div>
+		</details>			
 
 			<a href="#close" onclick="history.back(); return false;" title="Закрыть">Закрыть</a>
 		</div>        

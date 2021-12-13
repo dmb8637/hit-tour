@@ -12,32 +12,32 @@
   ================================================== -->	
 	<link rel="stylesheet" href="../../css/modal.css">
 
-<script type="text/javascript">
+	<script type="text/javascript">
 
-	window.addEventListener("DOMContentLoaded", function() {
-	function setCursorPosition(pos, elem) {
-   		 elem.focus();
-   		 if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
-    		else if (elem.createTextRange) {
-       		 var range = elem.createTextRange();
-       		 range.collapse(true);
-        		range.moveEnd("character", pos);
-        		range.moveStart("character", pos);
-        		range.select()
+		window.addEventListener("DOMContentLoaded", function() {
+		function setCursorPosition(pos, elem) {
+			 elem.focus();
+			 if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+				else if (elem.createTextRange) {
+				 var range = elem.createTextRange();
+				 range.collapse(true);
+					range.moveEnd("character", pos);
+					range.moveStart("character", pos);
+					range.select()
+				}
 			}
-		}
-	});
-</script>
-	</head>
+		});
+	</script>
+</head>
 
 <body>
 	<div id="modal1" class="modal">
 		<div>
-			<h3>Визовый календарь</h3>
-			Нерабочие дни консульства
-			<ul>
-				<li></li>
-			</ul>
+			<div style='text-align: center;'>
+				<h3>Визовый календарь. Нерабочие дни консульства</h3>		
+				<br>
+				<img src='calendar-business-2022-japan.jpg'>
+			</div>
 			<a href="#close" onclick="history.back(); return false;" title="Закрыть">Закрыть</a>
 		</div>
 	</div>
@@ -47,13 +47,65 @@
 		<h3>ЧАСТЫЕ ВОПРОСЫ</h3>
 
 		<details class = "item">
-			<summary class = "ask"><strong></strong></summary>
+			<summary class = "ask"><strong>Какие бывают причины отказа в выдаче визы в Японию?</strong></summary>
 				<div class = "answer">
-					<p class="mod">
+					<p class="mod">Консульство Японии отказывает в визах крайне редко. Но в случае отказа в визе причины отказа заявителю не разглашаются. Заявитель может повторно подавать заявление на оформление визы по истечении 6 месяцев со дня проставления отказа.
 					</p>
 				</div>
 		</details>		
 		<br>
+
+		<details class = "item">
+			<summary class = "ask"><strong>Нужна ли мне транзитная виза? Могу ли я получить ее в аэропорту?</strong></summary>
+				<div class = "answer">
+					<p class="mod">Граждане России, СНГ и Грузии для въезда на территорию Японии должны иметь действующую визу или разрешение на повторный въезд. Если Вы планируете поездку в Японию с любыми целями, Вам необходимо заранее получить соответствующую визу. Все визы, в том числе и транзитная, выдаются только в дипломатических представительствах (посольствах и генеральных консульствах) Японии.
+					</p>
+				</div>
+		</details>		
+		<br>
+
+		<details class = "item">
+			<summary class = "ask"><strong>Я купил(а) круиз с остановками в Японии. Нужна ли мне виза?</strong></summary>
+				<div class = "answer">
+					<p class="mod">Если Ваша круизная поездка предполагает остановку в Японии, то независимо от срока пребывания в Японии Вам будет необходима краткосрочная (не транзитная) виза. В случае морского круиза сход на берег по транзитной визе не допускается.
+					</p>
+				</div>
+		</details>		
+		<br>
+
+		<details class = "item">
+			<summary class = "ask"><strong>Может ли подать документы на визу в Японию мой представитель?</strong></summary>
+				<div class = "answer">
+					<p class="mod">Документы на оформление виз можно подать лично в офисе, может подать ваш представитель или можно прислать любой курьерской службой.
+					</p>
+				</div>
+		</details>		
+		<br>
+
+		<details class = "item">
+			<summary class = "ask"><strong>Стоимость получения японской визы?</strong></summary>
+				<div class = "answer">
+					<p class="mod">Стоимость оформления визы в Японию в нашей компании составляет 3500-8500 руб. в зависимости от наличия у туриста брони отеля. Дополнительно оплачивается медицинская страховка, стоимость которой составляет 1$ в день.
+					</p>
+				</div>
+		</details>		
+		<br>
+
+		<details class = "item">
+			<summary class = "ask"><strong>Можно ли получить японскую визу срочно?</strong></summary>
+				<div class = "answer">
+					<p class="mod">Оформление визы в Японию не предполагает срочного рассмотрения. Также нужно иметь в виду, что консульство может увеличить срок оформления в случае необходимости.
+					</p>
+				</div>
+		</details>		
+		<br>
+
+		<details class = "item">
+			<summary class = "ask"><strong>Можно ли заказать доставку документов в регионы?</strong></summary>
+				<div class = "answer">
+					<p class="mod">Вся информация о курьерской доставке <button onclick="window.location.href='../../index.html?courier';">здесь</button></p>
+				</div>
+		</details>			
 
 			<a href="#close" onclick="history.back(); return false;" title="Закрыть">Закрыть</a>
 		</div>        
