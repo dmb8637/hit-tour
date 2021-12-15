@@ -44,10 +44,6 @@
 	<script src="js/jquery.js"></script> 
 	<script src="js/calcsum.js"></script>
     <script>
-	
-		  document.addEventListener("DOMContentLoaded", () => {
-					rate();
-			});
 		
 		$(function(){
 			var str = location.search;
@@ -100,8 +96,10 @@
 			</div>
 	
 			<div style="display:inline-block; position: absolute; margin-top: 25px; margin-left:5px; font-size:x-small; line-height:1.1;">
-				<span>Внутренний курс (включая все сборы)</span>
+				<span>Внутренний курс(включая все сборы):</span>
 				<br><span id='rateeuro'>1€ = ... ₽</span><br><span id='rateusd'>1$ = ... ₽</span>
+				<br><br><span>Курс ЦБ:</span>
+				<br><span id='rateeurocb'>1€ = ... ₽</span><br><span id='rateusdcb'>1$ = ... ₽</span>
 			</div>
 
 			<nav>

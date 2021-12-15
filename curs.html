@@ -6,8 +6,8 @@
 	
 			<b>Дата:</b> <span id="d"></span><br />
 			<b>Кол-во записей:</b> <span id="n"></span><br />
-			
-	
+			<div id='table'>
+			</div>
 	
 	<br>
 	
@@ -34,8 +34,8 @@
 		today = dd + '/' + mm + '/' + yyyy;
 		document.getElementById("d").innerHTML = today;
 		
-		var uri = "http://www.cbr.ru/scripts/XML_daily.asp?date_req=" + today;
-<!-- 		var uri = "curs.xml"; -->
+		<!-- var uri = "http://www.cbr.ru/scripts/XML_daily.asp?date_req=" + today; -->
+		var uri = "curs.xml";
 		/*var name = "curs.xml";
 		window.onload = function downloadURI(uri, name) 
 		{
@@ -51,7 +51,7 @@
    
       if (window.XMLHttpRequest)
       { // для IE7+, Firefox, Chrome, Opera, Safari
-         xmlhttp = new XMLHttpRequest();
+        xmlhttp = new XMLHttpRequest();
       }
       else
       { // для IE6, IE5
@@ -62,19 +62,30 @@
       xmlhttp.send();
       xmlDoc = xmlhttp.responseXML;
 
-      document.write("<table border='1'>");
       var x = xmlDoc.getElementsByTagName("Valute");
+	  var z = 0;
+	  var s = "<table style='border-collapse: collapse; border: 2px solid #FFE4B5;'>";
 	  
       for (i = 0; i < x.length; i++)
       {
-         document.write("<tr><td>");
-         document.write(x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue);
-         document.write("</td><td>");
-         document.write(x[i].getElementsByTagName("CharCode")[0].childNodes[0].nodeValue);
-         document.write("</td><td>");
-         document.write(x[i].getElementsByTagName("Value")[0].childNodes[0].nodeValue);     
-		 document.write("</td></tr>");
+		var codechar = x[i].getElementsByTagName("CharCode")[0].childNodes[0].nodeValue;
+		s += "<tr><td>";
+		s += x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue;
+		s += "</td><td>";
+		s += codechar;
+		s += "</td><td>";
+		s += x[i].getElementsByTagName("Value")[0].childNodes[0].nodeValue;     
+		s += "</td></tr>";
+		z++;
       }
-      document.write("</table>");
+	  s += "</table>";
+	  $('#n').replaceWith('<span id="n">' + z + '</span>');
+	  $('#table').append($(s));
+	  $('#table td').css({
+							'text-align':'left',
+							'padding':'3px',
+							'border':'1px solid black'
+						});
+
 
    </script>
