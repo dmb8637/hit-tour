@@ -67,7 +67,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 /* -------------------------------------------- */
 /* ------------------Content------------------- */
 #content {}
-#content .wrap-content{background-color:#FFE4B5; border:0px solid #CCC; margin-top: 10px; padding: 0 5 5 5; width: auto;}
+#content .wrap-content{background-color:#FFE4B5; border:0px solid #CCC; margin-top: 20px; padding:0 5px 5px 5px;width: auto;}
  
 .block01 {display:none;text-align:center; padding-bottom:30px;}
 .block01 img{border:5px solid #CCCCCC;}
@@ -183,6 +183,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 .wrap-content .back{
 		opacity: .4;
 		position:left;
+		margin-top:30px;
 }
 .wrap-content .back .dlpic {
 	margin-bottom: 3px;
