@@ -82,5 +82,5 @@ $(function(){
 		var euroRateKalinka = 84.5;
 		var ss = parseFloat($(this).text())/euroRateKalinka;
 		
-		$(this).replaceWith('<td class="lc" id="s">' + Math.round(ss) + ' €</td>');
+		$(this).replaceWith('<td class="lc" id="s">' + Math.round(ss*10)/10 + ' €</td>');
 	});
