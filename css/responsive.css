@@ -65,6 +65,8 @@ img{max-width:100%;	height: auto; width: auto\9; }
 	.wrap-content .sim-slider {display: none;}
 	.wrap-header .tel {display:none;}
 	.wrap-header .telm {display:block;}
+	.wrap-header .rate1, .wrap-header .rate2 {display:none;}
+	.wrap-header .ratem {display:inline-block;}
 
 	.wrap-content .scrolling-wrapper {
 			overflow-x:auto; }

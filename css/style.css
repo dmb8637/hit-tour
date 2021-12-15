@@ -57,6 +57,10 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 .wrap-header .telm img {width:20px; height:20px;}
 .wrap-header .tel {display:inline-block; margin: 5px; margin-top: 45px;}
 .wrap-header .tel img {width:20px; height:20px;}
+
+ /* ------------------------------------------------------------*/
+ .wrap-header .ratem {display:none; position: absolute; margin-top: 15px; margin-left:5px; font-size:x-small; line-height:1.1;}
+ .wrap-header .rate1, .wrap-header .rate2 {display:inline-block; margin-top: 25px; margin-left:15px; font-size:small; line-height:1.1;}
 /* -------------------------------------------- */
 /* ------------------Featured---------------- */
 
@@ -129,8 +133,8 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 	height: 30px;
 	border: 1px solid black;
    }
- /* ------------------------------------------------------------*/
 
+ /* ------------------------------------------------------------*/
 .wrap-content .scrolling-wrapper {
   display: none;
   flex-wrap: nowrap;
