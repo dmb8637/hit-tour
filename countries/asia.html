@@ -1,0 +1,39 @@
+<script>
+	var loc = location.search;
+	if(loc){
+		$(".wrap-content .scrolling-wrapper")[0].style.display = "flex";
+		$(".block03 div[class*='col-']").each(function(){
+				$(this).css('display', 'inline-block');
+			});
+		}		
+</script>
+
+	<div class="wrap-content zerogrid">
+		
+		<div class="scrolling-wrapper">
+			<div class="card"><button onclick="window.location.href='index.html?countries/australocean';">Австралия и Океания</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/asia';">Азия</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/afrika';">Африка</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/middleeast';">Ближний Восток</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/europe';">Европа</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/northamerica';">Северная Америка</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/southamerica';">Южная Америка</button></div>
+		</div>
+		
+		<div class="row block03">
+			<div class="col-3-3">
+				<div class="wrap-col">
+					<a href="index.html?countries/thailand/thailand"><h2>ТАЙЛАНД</h2><img src="countries/thailand/thailandScreen.jpg"/>
+					<p>Страна <strong>Тайланд</strong> вытянута с севера на юг, поэтому климат.. <span>читать далее</span></p></a>
+				</div>
+			</div>
+			<div class="col-9-3">
+				<div class="wrap-col">
+					<a href="index.html?countries/turkey/turkey"><h2>ТУРЦИЯ</h2><img src="countries/turkey/turkeyScreen.jpg"/>
+					<p><strong>Турция</strong> — страна преимущественно горная, поэтому климат.. <span>читать далее</span></p></a>
+				</div>
+			</div>				
+			
+		</div>
+		
+	</div>

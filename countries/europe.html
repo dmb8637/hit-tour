@@ -1,0 +1,64 @@
+<script>
+	var loc = location.search;
+	if(loc){
+		$(".wrap-content .scrolling-wrapper")[0].style.display = "flex";
+		$(".block03 div[class*='col-']").each(function(){
+				$(this).css('display', 'inline-block');
+			});
+		}		
+</script>
+
+	<div class="wrap-content zerogrid">
+		
+		<div class="scrolling-wrapper">
+			<div class="card"><button onclick="window.location.href='index.html?countries/australocean';">Австралия и Океания</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/asia';">Азия</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/afrika';">Африка</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/middleeast';">Ближний Восток</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/europe';">Европа</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/northamerica';">Северная Америка</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/southamerica';">Южная Америка</button></div>
+		</div>
+		
+		<div class="row block03">
+			<div class="col-6-3">
+				<div class="wrap-col">
+					<a href="index.html?countries/greece/greece"><h2>ГРЕЦИЯ</h2><img src="countries/greece/greeceScreen.jpg"/>
+					<p>По большей части на территории <strong>Греции</strong> царит средиземноморский.. <span>читать далее</span></p></a>
+				</div>
+			</div>			
+			<div class="col-5-3">
+				<div class="wrap-col">
+					<a href="index.html?countries/cyprus/cyprus"><h2>КИПР</h2><img src="countries/cyprus/cyprusScreen.jpg"/>
+					<p>Климат на острове <strong>Кипр</strong>— субтропический средиземноморский.. <span>читать далее</span></p>
+					</a>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<a href="index.html?countries/russia/russia"><h2>РОССИЯ</h2><img src="countries/russia/rusScreen.jpg"/>
+					<p><strong>По России</strong> можно путешествовать всю жизнь и при этом.. <span>читать далее</span></p></a>
+				</div>
+			</div>
+			<div class="col-11-3">
+				<div class="wrap-col">
+					<a href="index.html?countries/russia/sochi"><h2>Сочи(Россия)</h2><img src="countries/russia/sochiScreen.jpg"/>
+					<p>Со времен проведения зимней Олимпиады турпоток в <strong>Сочи</strong> увеличился.. <span>читать далее</span></p></a>
+				</div>
+			</div>
+			<div class="col-7-3">
+				<div class="wrap-col">
+					<a href="index.html?countries/montenegro/montenegro"><h2>ЧЕРНОГОРИЯ</h2><img src="countries/montenegro/montenegroScreen.jpg"/>
+					<p>В северной <strong>Черногории</strong> климат умеренно континентальный.. <span>читать далее</span></p></a>
+				</div>
+			</div>	
+			<div class="col-4-3">
+				<div class="wrap-col">
+					<a href="index.html?countries/czech/czech"><h2>ЧЕХИЯ</h2><img src="countries/czech/czechScreen.jpg"/>
+					<p>Климат <strong>Чехии</strong> умеренный, континентально-океанический.. <span>читать далее</span></p></a>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>

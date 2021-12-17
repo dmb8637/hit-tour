@@ -146,7 +146,8 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 }
 .wrap-content .scrolling-wrapper button {
 	border-radius: 5px;
-	padding: 10px;
+	padding: auto;
+	height:45px;
 	} 
  .wrap-content .scrolling-wrapper button:hover {font-weight: bold;}
  /* ------------------------------------------------------------*/
@@ -275,7 +276,7 @@ footer .col-2-3 img {width:180px; height:99px;}
 
 .back_to_top {
   position: fixed;
-  bottom: 80px;
+  bottom: 40px;
   right: 30px;
   z-index: 9999;
   width: 30px;

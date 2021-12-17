@@ -1,0 +1,34 @@
+<script>
+	var loc = location.search;
+	if(loc){
+		$(".wrap-content .scrolling-wrapper")[0].style.display = "flex";
+		$(".block03 div[class*='col-']").each(function(){
+				$(this).css('display', 'inline-block');
+			});
+		}		
+</script>
+
+	<div class="wrap-content zerogrid">
+		
+		<div class="scrolling-wrapper">
+			<div class="card"><button onclick="window.location.href='index.html?countries/australocean';">Австралия и Океания</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/asia';">Азия</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/afrika';">Африка</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/middleeast';">Ближний Восток</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/europe';">Европа</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/northamerica';">Северная Америка</button></div>
+			<div class="card"><button onclick="window.location.href='index.html?countries/southamerica';">Южная Америка</button></div>
+		</div>
+		
+		<div class="row block03">
+
+			<div class="col-10-3">
+				<div class="wrap-col">
+					<a href="index.html?countries/uae/uae"><h2>ОАЭ</h2><img src="countries/uae/uaeScreen.jpg"/>
+					<p><strong>ОАЭ.</strong> Многие слышали о самом крупном в мире торговом.. <span>читать далее</span></p></a>
+				</div>
+			</div>			
+			
+		</div>
+		
+	</div>
