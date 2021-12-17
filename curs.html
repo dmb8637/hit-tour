@@ -32,7 +32,7 @@
 		var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 		var yyyy = today.getFullYear();
 		today = dd + '/' + mm + '/' + yyyy;
-		document.getElementById("d").innerHTML = today;
+		//document.getElementById("d").innerHTML = today;
 		
 		<!-- var uri = "http://www.cbr.ru/scripts/XML_daily.asp?date_req=" + today; -->
 		var uri = "curs.xml";
@@ -63,6 +63,8 @@
       xmlDoc = xmlhttp.responseXML;
 
       var x = xmlDoc.getElementsByTagName("Valute");
+	  var y = xmlDoc.getElementsByTagName("ValCurs");
+	  document.getElementById("d").innerHTML = y[0].attributes[0].value;
 	  var z = 0;
 	  var s = "<table style='border-collapse: collapse; border: 2px solid #FFE4B5;'>";
 	  
@@ -70,8 +72,14 @@
       {
 		var codechar = x[i].getElementsByTagName("CharCode")[0].childNodes[0].nodeValue;
 		s += "<tr><td>";
+		s += i+1;
+		s += "</td><td>";
 		s += x[i].getElementsByTagName("Name")[0].childNodes[0].nodeValue;
 		s += "</td><td>";
+		<!-- s += x[i].attributes[0].value; -->
+		<!-- s += "</td><td>"; -->
+		<!-- s += y[0].attributes[0].value; -->
+		<!-- s += "</td><td>"; -->
 		s += codechar;
 		s += "</td><td>";
 		s += x[i].getElementsByTagName("Value")[0].childNodes[0].nodeValue;     

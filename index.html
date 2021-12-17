@@ -206,10 +206,12 @@
 	</div>
 
 </footer>
-
-	<div class='tg' style="position: fixed; right:calc(100vw*0.05); top:calc(100vh*0.8); z-index: 1;text-align:center; width:15%; max-width: 70px;">
+	<a class="back_to_top" title="Наверх">↑</a>
+	<div class='tg' style="position: fixed; right:calc(100vw*0.05); top:calc(100vh*0.7); z-index: 1;text-align:center; width:15%; max-width: 70px;">
 		<a href="https://telegram.im/@Tusya_76" target="_blank"><img style="border-radius:7px;opacity:0.5;" src="images/tg_140_135.png" alt='0'></a>
 	</div> 
+
+<script src="js/top.js"></script>
 <script>
 		function opactg(){
 			$(".tg").fadeOut(1500).delay(1000).fadeIn(1500);
@@ -218,5 +220,6 @@
 		let timerId_ = setInterval(() => setTimeout(opactg, 100), 1000);
 		setTimeout(() => { clearInterval(timerId_); }, 3000);
 </script>
+
 </body>
 </html>
