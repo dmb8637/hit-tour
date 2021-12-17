@@ -133,7 +133,12 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 	height: 30px;
 	border: 1px solid black;
    }
-
+.wrap-content .wanttour {
+	display:none; background: lightgrey; margin:auto;margin-top:15px;width:280px;padding:auto; border-radius: 10px; border: 5px solid #FFE4B5; text-align:center;line-height:0.1;
+	}
+.wrap-content .wanttour button{margin-left:240px; margin-top: 0px; background: lightgrey; padding:1px; border:0; transform: rotate(45deg); font-size: x-large;}
+.wrap-content .wanttour button:hover{font-weight:bold;}
+.wrap-content .wanttour p{padding:13px; margin-top:-25px;}
  /* ------------------------------------------------------------*/
 .wrap-content .scrolling-wrapper {
   display: none;

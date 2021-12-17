@@ -28,12 +28,27 @@
 			}
 		});
 		
+		var btn_wt = $('.wrap-content .wanttour .btn');
+		$(btn_wt).on('click',function(){
+				$(this).parent().off('click');
+				$(this).parent().css('display','none');
+			});
+		
+		var wt = $('.wrap-content .wanttour');
+		$(wt).on('click',function(){
+				window.location.href='index.html?gettour';
+			});
+		
+		$(wt).on('touchmove',function(){
+				$(this).off('click');
+				$(this).css('display','none');
+			});
+		
+
 	</script> 
 	<div class="wrap-content zerogrid">
 
-	<div class="wanttour" ontouchmove="alert('11'); this.style.display='none';" style="background: lightgrey; margin:auto;margin-top:15px;width:300px;padding:auto; border-radius: 10px; border: 5px solid #FFE4B5; text-align:center;line-height:0.2;">
-		<button onclick="this.parentElement.style.display='none';" style="margin-left:250px; margin-top: 0px; background: lightgrey; padding:1px; border:0; transform: rotate(45deg); font-size: xx-large;">+</button>
-		<p style="padding:13px; margin-top:-20px;">Хотите заказать тур?</p>
+	<div class="wanttour"><button class="btn">+</button><p>Хотите заказать тур?</p>
 	</div>
 
 

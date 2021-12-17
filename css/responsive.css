@@ -70,7 +70,7 @@ img{max-width:100%;	height: auto; width: auto\9; }
 
 	.wrap-content .scrolling-wrapper {
 			overflow-x:auto; }
-	
+
 	.wrap-content .slider {
 			display: flex;
 			overflow-x:auto; }
@@ -94,7 +94,7 @@ img{max-width:100%;	height: auto; width: auto\9; }
 	/* -------------------------------------------- */
 	/* ------------------Content------------------- */
 	.block03 div[class*='col-'] {width:100%;}
-	
+		.wrap-content .wanttour{display:block;}
 	/* -------------------------------------------- */
 	/* ------------------Footer-------------------- */
 	
