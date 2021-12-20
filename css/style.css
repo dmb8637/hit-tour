@@ -134,12 +134,13 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 	border: 1px solid black;
    }
 .wrap-content .wanttour {box-shadow: 5px 5px;transition-duration: .6s; 
-	display:none; background: lightgrey; margin:15px -280px auto auto; width:280px;padding:5px; height:25px; border-radius: 5px; border: 0px solid #FFE4B5; text-align:center;line-height:0.1;
+	display:none; background: lightgrey; margin:15px -290px auto auto; width:280px;padding:5px; height:25px; border-radius: 5px; border: 0px solid #FFE4B5; text-align:center;line-height:0.1;
 	}
 .wrap-content .wanttour button{margin-left:270px; background: lightgrey; padding:0px; border:0;margin-top: -5px; }
 .wrap-content .wanttour button:hover{font-weight:bold;}
 .wrap-content .wanttour p{padding:5px; margin-top:-5px; }
 .wrap-content .wanttour:nth-of-type(1) {transition-timing-function: cubic-bezier(0.6, 0.1, 0.15, 0.8);}
+
  /* ------------------------------------------------------------*/
 .wrap-content .scrolling-wrapper {
   display: none;
