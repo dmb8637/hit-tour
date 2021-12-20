@@ -71,7 +71,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 /* -------------------------------------------- */
 /* ------------------Content------------------- */
 #content {}
-#content .wrap-content{background-color:#FFE4B5; border:0px solid #CCC; margin-top: 20px; padding:0 5px 5px 5px;width: auto;}
+#content .wrap-content{background-color:#FFE4B5; border:0px solid #CCC; margin-top: 20px; padding:0 5px 5px 10px;width: auto;}
  
 .block01 {display:none;text-align:center; padding-bottom:30px;}
 .block01 img{border:5px solid #CCCCCC;}
@@ -160,10 +160,11 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
     float: right; /* Выравнивание по правому краю */
     border: 0px solid #333; /* Параметры рамки */
     padding: 2px; /* Поля внутри блока */
-    margin: 3px 0px 3px 5px; /* Отступы вокруг */
+    margin: 3px 3px 3px 5px; /* Отступы вокруг */
     /*background: white; /* Цвет фона */ 
 	text-align:center;
 	text-indent: 0px;
+	line-height:1.2;
    }
    .wrap-content .sign figcaption {
 	   text-align: center;
