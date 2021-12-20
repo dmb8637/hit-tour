@@ -5,15 +5,21 @@
 		  return Math.floor(Math.random() * (max - min)) + min;
 		};
 		
+		function tranwt(){
+				$(".wrap-content .wanttour")[0].style.transform = "translateX(-80vw)";
+			}
+		
 		$(function getrnd(){
 			var loc = location.search;
 			if(loc=='?countries'){
 				$(".block02")[0].style.display = "none";
+				$(".wrap-content .wanttour")[0].style.display = "none";
 				$(".wrap-content .scrolling-wrapper")[0].style.display = "flex";
 				$(".block03 div[class*='col-']").each(function(){
 						$(this).css('display', 'inline-block');
 					});  
 			} else if(!loc) {
+				setTimeout(tranwt, 100);
 				var colNum = 11;
 				do {
 					var f1 = getRandomInt(1, colNum+1);
