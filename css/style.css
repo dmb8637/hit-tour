@@ -234,8 +234,9 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 .wrap-content .wrap li {padding:4px;	line-height: 1.8; display:inline;}
 /* .wrap-content div .wrap:hover {background:lightgrey; width: 23%;} */
 /* .wrap-content .wrap:hover a{font-size: 120%;color:black;} */
-.wrap-content .download button:hover {font-weight: bold;}
-.wrap-content .download {line-height: 2;}
+.wrap-content .download {line-height: 3;}
+.wrap-content .download a{font-size: x-small;}
+.wrap-content .download img{width:35px; height:35px;}
 /* .wrap-content .download a{background:#FFE4B5;text-align: center;border-radius: 2px;	vertical-align: middle;line-height: 2;} */
 /* .wrap-content .download:hover a{font-size: 110%;color:black;background:lightgrey; width: 33%;} */
 
