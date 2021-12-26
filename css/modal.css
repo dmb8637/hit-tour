@@ -31,6 +31,7 @@ pointer-events: auto;
 /* Содержание */
 .modal > div {
 width: 80%;
+max-width:750px;
 background: #ffffff;
 position: relative;
 margin: 10% auto;
