@@ -94,6 +94,9 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 	padding:5px;
 	text-align:justify;
 	text-indent: 25px;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
 	}
  
 .wrap-content .leftimg {
