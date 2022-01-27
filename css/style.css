@@ -81,6 +81,41 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 .block02 p { padding:10px; font-size:14px; text-align:justify; line-height:20px;}
 .block02 a {color:#DA251D;}
 
+/********************************************/
+
+/* скрываем чекбоксы и блоки с содержанием */
+.block02 .hide {
+    display: none; 
+}
+
+.block02 .hide + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.block02 .hide + label {
+    border-bottom: 1px dotted green;
+    padding: 0;
+    color: green;
+    cursor: pointer;
+    display: inline-block; 
+}
+/* вид текста label при активном переключателе */
+.block02 .hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.block02 .hide:checked + label + div {
+    display: block; 
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px; 
+}
+.block02 .news {
+    margin: 2% 5%;
+}
+/******************************************/
 .block03 {margin:0px 0;}
 .block03 div[class*="col-"]  {display:none;}
 .block03 h2{font-size:18px;}
