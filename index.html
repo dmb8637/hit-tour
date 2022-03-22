@@ -66,12 +66,25 @@
 		});
 		
 		function tranwt(){
-			document.getElementById('dad').style.transform = 'rotateY('+x+'rad)';
+			if (x<6.285)
+			{
+				document.getElementById('dad').style.transform = 'rotateY('+x+'rad)';
+			}
+			if (x>=6.285 & x<12.569)
+			{
+				document.getElementById('dad').style.transform = 'rotateX('+x+'rad)';
+			}
+			x = x + 0.1;
+			if (x>=12.569)
+			{
+				clearInterval(timerId);
+			}		
+			/*document.getElementById('dad').style.transform = 'rotateY('+x+'rad)';
 			x = x + 0.1;  
 			if (x>12.8)
 			{
 				clearInterval(timerId);
-			}			
+			}	*/		
 		}
 		let x = 0;
 		let timerId = setInterval(tranwt, 25);
