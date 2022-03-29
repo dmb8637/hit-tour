@@ -261,12 +261,29 @@
 
 <script src="js/top.js"></script>
 <script>
-		function opactg(){
-			$(".tg").fadeOut(1500).delay(1000).fadeIn(1500);
+		function tranwt3(){
+			z = z + z1;
+			$(".tg").css('opacity', z);
+			if (z<=0)
+			{
+				z=0;
+				z1 = 0.02;
+			}
+			if (z>=1){
+				z=1;
+				z1 = -0.02;
+				clearInterval(timerId3);
+			}
 		}
+		let z = 1; 
+		let z1 = -0.02;
+		let timerId3 = setInterval(tranwt3, 25);
+		/*function opactg(){
+			$(".tg").fadeOut(1500).delay(1000).fadeIn(1500);
+		}*/
 		//$(".tg").hide();
-		let timerId_ = setInterval(() => setTimeout(opactg, 100), 1000);
-		setTimeout(() => { clearInterval(timerId_); }, 2000);
+		//let timerId_ = setInterval(() => setTimeout(opactg, 100), 1000);
+		//setTimeout(() => { clearInterval(timerId_); }, 2000);
 </script>
 
 </body>
