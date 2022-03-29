@@ -66,6 +66,7 @@
 			$('.copyright p').replaceWith('<p>Copyright © 2021 <a href="https://www.hit-tour.ru" target="_blank">Турагенство</a> hit-tour.ru&nbsp;&nbsp;Сайт обновлен: '+dateString+'</p>');
 		});
 		
+		let timerId1 = function(){};
 		function tranwt1(){
 			if (x1<6.285)
 			{
@@ -79,6 +80,7 @@
 			if (x1>=12.569)
 			{
 				clearInterval(timerId1);
+
 			}		
 	
 		}
@@ -88,12 +90,13 @@
 			if (y1==360)
 			{
 				clearInterval(timerId2);
+				timerId1 = location.search.substr(1)==""?setInterval(tranwt1, 25):function(){};	
 			}
 		}
 		let x1 = 0;
 		let y1 = 0;
-		let timerId1 = location.search.substr(1)==""?setInterval(tranwt1, 25):function(){};	
 		let timerId2 = location.search.substr(1)==""?setInterval(tranwt2, 25):function(){};	
+		
 	//setTimeout(() => { /*document.getElementById('dad').style.transform = 'rotateY(0rad)';*/ clearInterval(timerId); }, 3184);
 	/*	$(function () {
 		document.cookie = "username=Вася Пупкин; expires=24/12/2021 15:41:00";
