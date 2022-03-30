@@ -255,12 +255,15 @@
 
 </footer>
 	<a class="back_to_top" style="" title="Наверх">↑</a>
-	<div class='tg' style="position:fixed; right:calc(100vw*0.05);	top:calc(100vh*0.7); z-index:1;	text-align:center; width:15%; max-width:70px;">
+	<div class='tg' style="position:fixed; top:calc(100vh*0.7); z-index:1;	text-align:center; width:15%; max-width:70px;">
 		<a href="https://telegram.im/@Tusya_76" target="_blank"><img src="images/tg_140_135.png" style="border-radius:7px; opacity:0.3;" alt='0'></a>
 	</div> 
 
 <script src="js/top.js"></script>
 <script>
+		$(function(){
+			$(".tg").css('right',document.documentElement.clientWidth*0.05);
+		});
 		function tranwt3(){
 			z = z + z1;
 			$(".tg").css('opacity', z);
