@@ -6,10 +6,12 @@
     var coords = document.documentElement.clientHeight;
 
     if (scrolled > coords) {
-      goTopBtn.classList.add('back_to_top-show');
+		goTopBtn.style.display = "block";
+      //goTopBtn.classList.add('back_to_top-show');
     }
     if (scrolled < coords) {
-      goTopBtn.classList.remove('back_to_top-show');
+		goTopBtn.style.display = "none";
+	  //goTopBtn.classList.remove('back_to_top-show');
     }
   }
 
