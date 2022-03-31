@@ -255,7 +255,7 @@
 
 </footer>
 	<a class="back_to_top" style="" title="Наверх">↑</a>
-	<div class='tg' style="position:fixed; top:calc(100vh*0.7); z-index:1;	text-align:center; width:15%; max-width:70px;">
+	<div class='tg' style="position:fixed; top:calc(100vh*0.7); z-index:1;	text-align:center; max-width:70px;">
 		<a href="https://telegram.im/@Tusya_76" target="_blank"><img src="images/tg_140_135.png" style="border-radius:7px; opacity:0.3;" alt='0'></a>
 	</div> 
 
@@ -264,6 +264,8 @@
 		$(function(){
 			var clientw = document.documentElement.clientWidth;
 			$(".tg").css('left', clientw*0.75);
+			$(".tg").css('width', '15%');
+
 			//var csscw = $(".tg").css('left');
 			//alert('ширина окна='+clientw + '; left='+csscw);
 		});
