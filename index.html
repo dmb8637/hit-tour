@@ -262,24 +262,26 @@
 <script src="js/top.js"></script>
 <script>
 		$(function(){
-			$(".tg").css('right',document.documentElement.clientWidth*0.05);
+			var clientw = document.documentElement.clientWidth;
+			alert(clientw);
+			$(".tg").css('right', clientw*0.05);
 		});
 		function tranwt3(){
-			z = z + z1;
-			$(".tg").css('opacity', z);
-			if (z<=0)
+			zx = zx + z1;
+			$(".tg").css('opacity', zx);
+			if (zx<=0)
 			{
-				z=0;
+				zx=0;
 				z1 = 0.02;
 			}
-			if (z>=1){
+			if (zx>=1){
 				//$(".tg").css('opacity', 0.3);
 				//z=0.3;
 				//z1 = -0.02;
 				clearInterval(timerId3);
 			}
 		}
-		let z = 1; 
+		let zx = 1; 
 		let z1 = -0.02;
 		let timerId3 = setInterval(tranwt3, 25);
 		/*function opactg(){
