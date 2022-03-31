@@ -84,6 +84,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 /********************************************/
 
 /* скрываем чекбоксы и блоки с содержанием */
+
 .block02 .hide {
     display: none; 
 }
@@ -91,7 +92,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
 .block02 .hide + label ~ div{
     display: none;
 }
-/* оформляем текст label */
+
 .block02 .hide + label {
     border-bottom: 1px dotted green;
     padding: 0;
@@ -99,12 +100,12 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
     cursor: pointer;
     display: inline-block; 
 }
-/* вид текста label при активном переключателе */
+
 .block02 .hide:checked + label {
     color: red;
     border-bottom: 0;
 }
-/* когда чекбокс активен показываем блоки с содержанием  */
+
 .block02 .hide:checked + label + div {
     display: block; 
     -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
@@ -112,6 +113,7 @@ nav .wrap-nav{position:absolute; top:80px; right:10px; height: 37px; background:
     box-shadow: inset 3px 3px 10px #7d8e8f;
     padding: 10px; 
 }
+
 .block02 .news {
     margin: 2% 5%;
 }

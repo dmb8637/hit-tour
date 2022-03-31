@@ -1,4 +1,16 @@
 	<script>
+		
+		$(".hide").on('click',function(){
+			var ths = this; 
+			//console.log('----');
+			$('.hide').each(function(index){
+				if (ths!=this){
+					$('.hide')[index].checked = false;
+					//console.log(index);
+				}//else $('.hide + label ~ div').eq(index).css('display', 'block');
+			});
+		});
+		
 		function getRandomInt(min, max) {
 		  min = Math.ceil(min);
 		  max = Math.floor(max);
@@ -286,3 +298,7 @@
 		</div>
 		
 	</div>
+	<script>
+
+	</script>
+	
