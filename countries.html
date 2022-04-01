@@ -20,7 +20,7 @@
 		function tranwt(){
 				var sw = document.documentElement.clientWidth;
 				var elOffset = (sw-280)/2+280;	
-				//console.log(sw);
+				console.log(sw);
 				//$(".wrap-content .wanttour")[0].style.transform = "translateX(-" + elOffset + "px)";
 				$(".wrap-content .wanttour")[0].style.transform = 'rotateX(6.285rad)';
 			}
@@ -35,7 +35,7 @@
 						$(this).css('display', 'inline-block');
 					});  
 			} else if(!loc) {
-				setTimeout(tranwt, 100);
+				setTimeout(tranwt, 500);
 				var colNum = 11;
 				do {
 					var f1 = getRandomInt(1, colNum+1);
